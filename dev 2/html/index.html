@@ -9,7 +9,7 @@
 
 	<!-- CSS only -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+  <link rel="stylesheet" type="text/css" href="style.css">
 	<!-- JS, Popper.js, and jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -18,7 +18,7 @@
 <body style="background-color: #f6f5f0">
   <div class="container">
 <nav class="navbar navbar-expand-lg navbar-light " style=" background-color: #f6da73">
-  <a class="navbar-brand" href="#" style="font-size: 25px">Food</a>
+  <a class="navbar-brand" href="index.html" style="font-size: 25px">Food</a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -27,30 +27,40 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
 
-      <li class="nav-item active" style="font-size: 25px; margin-left: 15px;">
-        <a class="nav-link" href="#">Профиль <span class="sr-only">(current)</span></a>
+      <li class="nav-item menubut">
+        <a class="nav-link" href="profile.html">Профиль <span class="sr-only">(current)</span></a>
       </li>
 
-      <li class="nav-item" style="font-size: 25px; margin-left: 15px;">
+      <li class="nav-item menubut">
         <a class="nav-link" href="#">Форум</a>
       </li>
 
-      <li class="nav-item" style="font-size: 25px; margin-left: 15px;">
-        <a class="nav-link" href="#">Контакты</a>
+      <li class="nav-item menubut">
+        <a class="nav-link" href="contact.html">Контакты</a>
       </li>
 
-      <li class="nav-item" style="font-size: 25px; margin-left: 15px;">
-        <a class="nav-link" href="#">Корзина</a>
-      </li>
+      <li class="nav-item dropdown menubut">
 
-      <li class="nav-item dropdown" style="font-size: 25px; margin-left: 15px;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Корзина
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Корзина</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Мои блюда</a>
+        </div>
+
+      </li>      
+
+      <li class="nav-item dropdown menubut">
 
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Кухни мира
         </a>
 
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Кухня 1</a>
+          <a class="dropdown-item" href="arabkitchen.html">Восточная кухня</a>
           <a class="dropdown-item" href="#">Кухня 2</a>
           <a class="dropdown-item" href="#">Кухня 3</a>
           <a class="dropdown-item" href="#">Кухня 4</a>
@@ -81,27 +91,27 @@
     <div class="carousel-item active">
       <div class="row">
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
       </div>
@@ -109,27 +119,27 @@
     <div class="carousel-item">
       <div class="row">
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
       </div>
@@ -137,27 +147,27 @@
     <div class="carousel-item">
        <div class="row">
        <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
       </div>
@@ -186,27 +196,27 @@
     <div class="carousel-item active">
       <div class="row">
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
       </div>
@@ -214,27 +224,27 @@
     <div class="carousel-item">
       <div class="row">
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
       </div>
@@ -242,27 +252,27 @@
     <div class="carousel-item">
        <div class="row">
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
       </div>
@@ -290,27 +300,27 @@
     <div class="carousel-item active">
       <div class="row">
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
       </div>
@@ -318,27 +328,27 @@
     <div class="carousel-item">
       <div class="row">
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
       </div>
@@ -346,27 +356,27 @@
     <div class="carousel-item">
        <div class="row">
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
         <div class="col-md-2" style="height: 150px;">
-          <img style="width: 150px; height: 130px;" src="picca.jpg">
+          <img style="width: 150px; height: 130px;" src="img/picca.jpg">
           <p class="text-center">pizza</p>
         </div>
       </div>

@@ -1,0 +1,28 @@
+.menubut{
+	font-size: 23px; 
+	margin-left: 15px;
+}
+
+.profimg{
+	height: 350px; 
+	width: 380px;
+}
+
+.img-1{
+	width: 150px; 
+	height: 130px; 
+	margin-top: 20px;
+}
+
+.block{
+	display: flex;
+	justify-content: center;
+	/*flex-wrap: */
+}
+
+.kitchen{
+	background-color: gray; 
+	margin-right: 10px; 
+	margin-bottom: 10px; 
+	margin-top: 10px;
+}
