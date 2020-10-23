@@ -29,8 +29,26 @@
 	margin-right: 10px;
 }
 
+hr{
+	background-color: gray;
+	width: 70%;
+	height: 1px;
+	border:0;
+}
+
 .margin-bottom{
 	margin-bottom: 10px;
+}
+
+.comm_img{
+	width: 25px;
+	height: 25px;
+	margin-right: 25px;
+}
+
+.comm_pos{
+	display: flex;
+	flex-direction: row;
 }
 
 .foodinfo{
