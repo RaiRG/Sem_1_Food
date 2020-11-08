@@ -14,10 +14,10 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </head>
 <body style="background-color: #f6f5f0">
-
-<div class="container">
+  <div class="container">
 <nav class="navbar navbar-expand-lg navbar-light menucalor menucalor rounded border">
   <a class="navbar-brand" href="index.html" style="font-size: 25px">Food</a>
 
@@ -30,7 +30,7 @@
 
       <li class="nav-item menubut">
         <!-- <a class="nav-link" href="profile.html">Профиль <span class="sr-only">(current)</span></a> -->
-        <a class="nav-link" href="registr.html">Вход <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="profile.html">Вход <span class="sr-only">(current)</span></a>
       </li>
 
       <li class="nav-item menubut">
@@ -85,115 +85,79 @@
 </nav>
 </div>
 
-<div class="container">
-  <div class="row block">
-
-        <div class="col-md-2 kitchen rounded border border-primary">
-          <a href="foodpage.html"><img class="img-1 rounded-circle border border-danger" src="img/picca.jpg"></a>
-          <h4 class="text-center">pizza</h4>
-          <p class="over"><small>Куриное филе(варёное) - 150 г. Помидоры - 3шт. Яйца - 3 шт. Лук репчатый - 1шт. Перец чили - 1/5 шт. Чеснок - 1-2 зубчика.</small></p>
-        </div>
-
-        <div class="col-md-2 kitchen rounded border border-primary">
-          <a href="foodpage.html"><img class="img-1 rounded-circle border border-danger" src="img/picca.jpg"></a>
-          <h4 class="text-center">pizza</h4>
-          <p class="over"><small>Куриное филе(варёное) - 150 г. Помидоры - 3шт. Яйца - 3 шт. Лук репчатый - 1шт. Перец чили - 1/5 шт. Чеснок - 1-2 зубчика.</small></p>
-        </div>
-
-        <div class="col-md-2 kitchen rounded border border-primary">
-          <a href="foodpage.html"><img class="img-1 rounded-circle border border-danger" src="img/picca.jpg"></a>
-          <h4 class="text-center">pizza</h4>
-          <p class="over"><small>Куриное филе(варёное) - 150 г. Помидоры - 3шт. Яйца - 3 шт. Лук репчатый - 1шт. Перец чили - 1/5 шт. Чеснок - 1-2 зубчика.</small></p>
-        </div>       
-
-  </div>
-</div>
 
 <div class="container">
-  <!-- Footer -->
-<footer class="page-footer font-small blue pt-4 menucalor menucalor rounded border" style="margin-top: 150px;">
+  <div class="h2 addmarginleft" style="margin-top: 30px;">Добавление нового блюда</div>
 
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
+  <br>
 
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
-
-        <!-- Content -->
-        <h5 class="text-uppercase">Наш сайт не оставит вас голодными</h5>
-        <p>© 2018 Волны. Все права защищены.</p>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase"></h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!"></a>
-          </li>
-          <li>
-            <a href="#!"></a>
-          </li>
-          <li>
-            <a href="#!"></a>
-          </li>
-          <li>
-            <a href="#!"></a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">Навигация</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="profile.html">Профиль</a>
-          </li>
-          <li>
-            <a href="#!">Форум</a>
-          </li>
-          <li>
-            <a href="contact.html">Контакты</a>
-          </li>
-          <li>
-            <a href="index.html">Главная</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
+  <form method="post" action="/" id="add">
+    <div class="addmarginleft">
+      <label for="img" class="h6">Основное фото :</label> <br>
+      <input class="btn btn-success" type="file" name="img">
     </div>
-    <!-- Grid row -->
 
-  </div>
-  <!-- Footer Links -->
+    <br>
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="index.html"> FoodFind.com</a>
-  </div>
-  <!-- Copyright -->
+    <div class="addmarginleft">
+      <label for="time" class="h6">Время приготовления :</label> <br>
+      <input type="time" name="time" class="menucalor"> 
+    </div>
 
-</footer>
-<!-- Footer -->
+    <div class="addmarginleft">
+      <label for="portion" class="h6">Кол-во порций :</label> <br>
+      <input type="number" name="portion" class="menucalor"> 
+    </div>
+
+    <div class="addmarginleft">
+      <label for="name" class="h6">Название :</label> <br>
+      <input type="text" name="name" class="menucalor">  
+    </div>
+
+    <br>
+
+    <div class="addmarginleft">
+      <h6>Описание :</h6>
+      <textarea form="#add" name="discription" class="menucalor" style="width: 60%;height: 200px;"></textarea>
+    </div>
+
+    <br>
+
+    <div id="Ingredients" class="addmarginleft">
+      <h6>Продукты</h6>
+      <input type="text" name="" class="menucalor" style="margin-bottom: 10px;"> <br>
+    </div>
+    <div class="addmarginleft">
+      <button class="btn btn-success" onclick="addIngredients(); event.preventDefault();">Добавить ингридиент</button>
+    </div>
+
+    <br>
+
+    <div id="steps" class="step addmarginleft">
+      <div>
+        <h3>Шаг</h3>
+        <label for="img" class="h6">Фото шага :</label> <br>
+        <input class="btn btn-success" type="file" name="img">
+        <h6>Описание шага :</h6>
+        <textarea form="#add" name="discription" class="menucalor" style="width: 60%;height: 200px;"></textarea>
+      </div>
+    </div>
+    <div class="addmarginleft">
+      <button class="btn btn-success" onclick="addStep(); event.preventDefault();">Добавить шаг</button>
+    </div>
+
+    <br>
+
+    <div class="addmarginleft submitB"> 
+      <button type="submit" class="btn btn-success" >Добавить Блюдо</button>
+    </div>
+
+    <br><br>
+
+  </form>
+
 </div>
+
 
 </body>
 </html>

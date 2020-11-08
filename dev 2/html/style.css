@@ -1,3 +1,39 @@
+.over{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.adminover{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.admin{
+    display: flex;
+    flex-direction: row;
+}
+
+/*#password_info{
+ display:none;
+}*/
+
+.invalid {
+ background:url(img/invalid.png) no-repeat 0 50%;
+ padding-left:22px;
+ line-height:24px;
+ color:#ec3f41;
+}
+.valid {
+ background:url(img/valid.png) no-repeat 0 50%;
+ padding-left:22px;
+ line-height:24px;
+ color:#3a7d34;
+}
+
 .menubut{
 	font-size: 23px; 
 	margin-left: 15px;
@@ -14,6 +50,11 @@
 	margin: 20px 5px 10px 5px;
 }
 
+.img-2{
+    width: 25px; 
+    height: 25px; 
+}
+
 .media-block{
 	margin-top: auto;
 	position: relative;
@@ -27,6 +68,11 @@
 	width: 20px;
 	height: 20px;
 	margin-right: 10px;
+}
+
+.submitB{
+    display: flex;
+    justify-content: center;
 }
 
 hr{
@@ -86,6 +132,11 @@ hr{
 	/*flex-wrap: */
 }
 
+.step{
+    display: flex;
+    flex-direction: column;
+}
+
 .kitchen{
 	background-color: gray; 
 	margin-right: 10px; 
@@ -121,7 +172,9 @@ hr{
 	background-color: #f6f5f0;
 }
 
-
+.addmarginleft{
+    margin-left: 20%;
+}
 
 .messegebox{
 	background-color: #cedd81;

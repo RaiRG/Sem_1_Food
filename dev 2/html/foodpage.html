@@ -47,9 +47,11 @@
         </a>
 
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="arabkitchen.html">Корзина</a>
+          <a class="dropdown-item" href="arabkitchen.html">Закладки</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="arabkitchen.html">Мои блюда</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="add.html">Добавить блюдо</a>
         </div>
 
       </li>      
@@ -73,7 +75,7 @@
       </li>      
     </ul>
 
-    <form class="form-inline my-2 my-lg-0">
+    <form method="post" class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Введите запрос" aria-label="Search">
       <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Поиск</button>
     </form>
@@ -210,7 +212,15 @@
             <div class="p col-md-11">Vhhhhhhhhhhh hhhhhhhhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</div>
           </div>
         </div>
-    </div>
+      </div>
+      <div class="col-md-12 foodinfo">
+        <div class="col-md-6 offset-md-3" style="margin-top: 25px;">
+          <form  method="post" action="/" id="comment">
+            <textarea form="#comment" name="discription" class="menucalor" style="width: 100%;height: 80px;"></textarea> <br>
+            <button class="btn btn-success" type="submit">Оставить отзыв</button>
+          </form>
+        </div>
+      </div>
 	</div>
 	
 <div class="container">

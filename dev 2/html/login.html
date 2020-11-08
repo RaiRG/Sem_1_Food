@@ -47,9 +47,11 @@
         </a>
 
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="arabkitchen.html">Корзина</a>
+          <a class="dropdown-item" href="arabkitchen.html">Закладки</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="arabkitchen.html">Мои блюда</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="add.html">Добавить блюдо</a>
         </div>
 
       </li>      
@@ -87,29 +89,30 @@
   <div class="row">
     <div class="col-md-4 offset-md-3  rounded border" style="background-color: #cedd81; margin-top: 20px;">
       <div class="row">
-        <div class="col-md-12">
-          <h3 style="margin-bottom: 15px;">Вход</h3>  
-        </div>
-        <div class="col-md-3">
-          <p class="text-left">Логин</p>  
-        </div>
-        <div class="col-md-6">
-          <input class="form-control mr-sm-2 inputH"  name="">
-        </div>   
-        <div class="col-md-3"></div> 
-      
-        <div class="col-md-3">
-          <p class="text-left">Пароль</p>  
-        </div>
-        <div class="col-md-6">
-          <input type="password" class="form-control mr-sm-2 inputH"  name="">
-        </div>   
-        <div class="col-md-3"></div> 
+        <form method="post">
+          <div class="col-md-12 offset-md-3">
+            <h3 style="margin-bottom: 15px;">Вход</h3>  
+          </div>
 
-        <div class="col-md-6 offset-md-3 text-right">
-           <button type="button" class="btn btn-danger" style="width: 100%;">Вход</button>
-        </div>   
-        <div class="col-md-3"></div> 
+          <div class="col-md-12 offset-md-3">
+            <label for="name">Имя</label>
+            <input class="form-control mr-sm-2 inputH"  name="name">
+          </div>   
+          <div class="col-md-3"></div> 
+              
+          <div class="col-md-12 offset-md-3">
+            <label for="password">Пароль</label>
+            <input type="password" class="form-control mr-sm-2 inputH"  name="password">
+          </div>   
+
+          <br>
+
+          <div class="col-md-9 offset-md-3 text-right">
+             <button type="button" class="btn btn-danger" style="width: 100%;">Вход</button>
+          </div>  
+
+          <br>
+        </form>
     </div>
   </div>
   <div class="col-md-2" style="margin-top: 25px;">
@@ -123,6 +126,16 @@
   </div>  
 </div>
 
+<!-- Модальное окно -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Неверный логин или пароль</h4>
+      </div>      
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

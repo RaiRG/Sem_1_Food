@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
 	<!-- JS, Popper.js, and jQuery -->
+  <script src="script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -47,9 +48,11 @@
         </a>
 
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="arabkitchen.html">Корзина</a>
+          <a class="dropdown-item" href="arabkitchen.html">Закладки</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="arabkitchen.html">Мои блюда</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="add.html">Добавить блюдо</a>
         </div>
 
       </li>      
@@ -87,45 +90,50 @@
   <div class="row">
     <div class="col-md-4 offset-md-3  rounded border" style="background-color: #cedd81; margin-top: 20px;">
       <div class="row">
-        <div class="col-md-12">
-          <h3 style="margin-bottom: 15px;">Регистрация</h3>  
-        </div>
-        <div class="col-md-3">
-          <p class="text-left">Логин</p>  
-        </div>
-        <div class="col-md-6">
-          <input class="form-control mr-sm-2 inputH"  name="">
-        </div>   
-        <div class="col-md-3"></div> 
-      
-        <div class="col-md-3">
-          <p class="text-left">Пароль</p>  
-        </div>
-        <div class="col-md-6">
-          <input type="password" class="form-control mr-sm-2 inputH"  name="">
-        </div>   
-        <div class="col-md-3"></div> 
+        <form method="post" action="/register" name="text">
+          <div class="col-md-12 offset-md-3">
+            <h3 style="margin-bottom: 15px;">Регистрация</h3>  
+          </div>
 
-        <div class="col-md-3">
-          <p class="text-left">Повторить</p>  
-        </div>
-        <div class="col-md-6">
-          <input type="password" class="form-control mr-sm-2 inputH"  name="">
-        </div>   
-        <div class="col-md-3"></div> 
+          <div class="col-md-12 offset-md-3">
+            <label for="name">Имя</label>
+            <input class="form-control mr-sm-2 inputH"  name="name">
+          </div>   
+          <div class="col-md-3"></div> 
+              
+          <div class="col-md-12 offset-md-3">
+            <label for="password">Пароль</label>
+            <input id="pswd" type="password" class="form-control mr-sm-2 inputH"  name="password">
+          </div>   
+          <div class="col-md-3"></div>
 
-        <div class="col-md-3">
-          <p class="text-left">Почта</p>  
-        </div>
-        <div class="col-md-6">
-          <input class="form-control mr-sm-2 inputH"  name="">
-        </div>   
-        <div class="col-md-3"></div> 
+          <div class="col-md-12 offset-md-3">
+            <label for="Повторить">Повторить</label>
+            <input type="password" class="form-control mr-sm-2 inputH"  name="Повторить">
+          </div>   
+          <div class="col-md-3"></div> 
 
-        <div class="col-md-6 offset-md-3 text-right">
-           <button type="button" class="btn btn-danger" style="width: 100%;">Регистрация</button>
-        </div>   
-        <div class="col-md-3"></div> 
+          <div class="col-md-12 offset-md-3">
+            <label for="email">Почта</label>
+            <input class="form-control mr-sm-2 inputH"  name="email">
+          </div>  
+          <br>
+
+          <div class="col-md-12 offset-md-3" id="password_info">
+           <p>Критерии пароля:</p>
+           <ul>s
+            <li id="length">  <strong>> 8 символов</strong></li>
+           </ul>
+          </div>  
+
+          <br>
+
+          <div class="col-md-9 offset-md-3 text-right">
+             <button type="submit" class="btn btn-danger" style="width: 100%;">Регистрация</button>
+          </div>  
+
+          <br>
+        </form>
     </div>
   </div>
   <div class="col-md-2" style="margin-top: 25px;">
@@ -139,6 +147,30 @@
   </div>  
 </div>
 
+<!-- Модальное окно -->
+<div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Пользователь с такой почтой уже зарегистрирован</h4>
+      </div>      
+    </div>
+  </div>
+</div>
 
+<!-- Модальное окно -->
+<div class="modal fade" id="password" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Неверный формат пароля : пароль должен содержать минимум 8 знаков</h4>
+      </div>      
+    </div>
+  </div>
+</div>
+
+<!-- это кнопки для запуска модальных окон, это для сервера, после проверки с его стороны -->
+<!-- <a class="dropdown-item" data-toggle="modal" data-target="#email" href="#"></a>
+<a class="dropdown-item" data-toggle="modal" data-target="#password" href="#"></a> -->
 </body>
 </html>
