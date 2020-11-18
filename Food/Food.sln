@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Food", "Food\Food.csproj", "{47FC8436-5950-4914-B8EC-A651D644FCDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaoDatabase", "DaoDatabase\DaoDatabase.csproj", "{B38F11D0-478F-440F-998E-F66E4B5136DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47FC8436-5950-4914-B8EC-A651D644FCDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47FC8436-5950-4914-B8EC-A651D644FCDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47FC8436-5950-4914-B8EC-A651D644FCDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47FC8436-5950-4914-B8EC-A651D644FCDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B38F11D0-478F-440F-998E-F66E4B5136DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38F11D0-478F-440F-998E-F66E4B5136DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B38F11D0-478F-440F-998E-F66E4B5136DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B38F11D0-478F-440F-998E-F66E4B5136DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Railina\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Railina\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Food.1852115192.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Railina\GitHub\Sem_1_Food\Food" t="IncludeFlat">
+      <e p="DaoDatabase" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Clients" t="Include">
+          <e p="Client.cs" t="Include" />
+          <e p="ClientDao.cs" t="Include" />
+        </e>
+        <e p="Connections" t="Include">
+          <e p="Client_Dish.cs" t="Include" />
+          <e p="Client_PersonalInfo.cs" t="Include" />
+          <e p="Dish_Country.cs" t="Include" />
+          <e p="Dish_Product.cs" t="Include" />
+        </e>
+        <e p="DaoDatabase.csproj" t="IncludeRecursive" />
+        <e p="Dishes" t="Include">
+          <e p="Dish.cs" t="Include" />
+          <e p="DishDAO.cs" t="Include" />
+        </e>
+        <e p="Entity.cs" t="Include" />
+        <e p="IConnactionOneToOne.cs" t="Include" />
+        <e p="IConnectionManyToManyDao.cs" t="Include" />
+        <e p="IDao.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="DaoDatabase.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PersonalInformation" t="Include">
+          <e p="PersonalInformation.cs" t="Include" />
+          <e p="PersonalInformationDao.cs" t="Include" />
+        </e>
+        <e p="Products" t="Include">
+          <e p="Product.cs" t="Include" />
+          <e p="ProductDAO.cs" t="Include" />
+        </e>
+        <e p="Сountries" t="Include">
+          <e p="Country.cs" t="Include" />
+          <e p="CountryDao.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Food" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Food.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Food.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="Food.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
