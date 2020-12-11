@@ -1,0 +1,76 @@
+﻿@page
+@model Test.Pages.Add
+@{
+    ViewData["Title"] = "Add dish";
+}
+<div class="container">
+  <div class="h2 addmarginleft" style="margin-top: 30px;">Добавление нового блюда</div>
+
+  <br>
+
+  <form method="post" action="/" id="add">
+    <div class="addmarginleft">
+      <label for="img" class="h6">Основное фото :</label> <br>
+      <input class="btn btn-success" type="file" name="img">
+    </div>
+
+    <br>
+
+    <div class="addmarginleft">
+      <label for="time" class="h6">Время приготовления :</label> <br>
+      <input type="time" name="time" class="menucalor"> 
+    </div>
+
+    <div class="addmarginleft">
+      <label for="portion" class="h6">Кол-во порций :</label> <br>
+      <input type="number" name="portion" class="menucalor"> 
+    </div>
+
+    <div class="addmarginleft">
+      <label for="name" class="h6">Название :</label> <br>
+      <input type="text" name="name" class="menucalor">  
+    </div>
+
+    <br>
+
+    <div class="addmarginleft">
+      <h6>Описание :</h6>
+      <textarea form="#add" name="discription" class="menucalor" style="width: 60%;height: 200px;"></textarea>
+    </div>
+
+    <br>
+
+    <div id="Ingredients" class="addmarginleft">
+      <h6>Продукты</h6>
+      <input type="text" name="" class="menucalor" style="margin-bottom: 10px;"> <br>
+    </div>
+    <div class="addmarginleft">
+      <button class="btn btn-success" onclick="addIngredients(); event.preventDefault();">Добавить ингридиент</button>
+    </div>
+
+    <br>
+
+    <div id="steps" class="step addmarginleft">
+      <div>
+        <h3>Шаг</h3>
+        <label for="img" class="h6">Фото шага :</label> <br>
+        <input class="btn btn-success" type="file" name="img">
+        <h6>Описание шага :</h6>
+        <textarea form="#add" name="discription" class="menucalor" style="width: 60%;height: 200px;"></textarea>
+      </div>
+    </div>
+    <div class="addmarginleft">
+      <button class="btn btn-success" onclick="addStep(); event.preventDefault();">Добавить шаг</button>
+    </div>
+
+    <br>
+
+    <div class="addmarginleft submitB"> 
+      <button type="submit" class="btn btn-success" >Добавить Блюдо</button>
+    </div>
+
+    <br><br>
+
+  </form>
+
+</div>

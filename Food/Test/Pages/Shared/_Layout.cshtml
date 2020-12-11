@@ -1,0 +1,179 @@
+﻿@using Microsoft.AspNetCore.Http
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>@ViewData["Title"] - Food</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="js/script.js"></script>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #f6f5f0">
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light menucalor menucalor rounded border">
+        <a class="navbar-brand" asp-page="Index" style="font-size: 25px">Food</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item menubut">
+                    <a class="nav-link" asp-page="Login">Профиль <span class="sr-only">(current)</span></a>
+                    
+                </li>
+
+                <li class="nav-item menubut">
+                    <a class="nav-link" asp-page="Forum">Форум</a>
+                </li>
+
+                <li class="nav-item menubut">
+                    <a class="nav-link"asp-page="Contacts">Контакты</a>
+                </li>
+
+                <li class="nav-item dropdown menubut">
+
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Корзина
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" asp-page="Kitchen">Закладки</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" asp-page="Kitchen">Мои блюда</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" asp-page="Add">Добавить блюдо</a>
+                    </div>
+
+                </li>
+
+                <li class="nav-item dropdown menubut">
+
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Кухни мира
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" asp-page="ArabKitchen">Восточная кухня</a>
+                        <a class="dropdown-item" href="#">Кухня 2</a>
+                        <a class="dropdown-item" href="#">Кухня 3</a>
+                        <a class="dropdown-item" href="#">Кухня 4</a>
+                        <a class="dropdown-item" href="#">Кухня 5</a>
+                    </div>
+
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" style="width: 200px;" type="search" placeholder="Введите запрос" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Поиск</button>
+            </form>
+
+        </div>
+    </nav>
+</div>
+
+@RenderBody()
+
+
+<div class="container">
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 menucalor menucalor rounded border" style="margin-top: 150px;">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Наш сайт не оставит вас голодными</h5>
+                    <p>© 2018 Волны. Все права защищены.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase"></h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!"></a>
+                        </li>
+                        <li>
+                            <a href="#!"></a>
+                        </li>
+                        <li>
+                            <a href="#!"></a>
+                        </li>
+                        <li>
+                            <a href="#!"></a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Навигация</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a asp-page="Profile">Профиль</a>
+                        </li>
+                        <li>
+                            <a asp-page="Forum">Форум</a>
+                        </li>
+                        <li>
+                            <a asp-page="Contacts">Контакты</a>
+                        </li>
+                        <li>
+                            <a asp-page="Index">Главная</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © 2020 Copyright:
+            <a asp-page="Index"> FoodFind.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+</div>
+
+</body>
+</html>
