@@ -5,16 +5,18 @@
 }
 <div class="container">
     <div class="row block">
-        
-        <div class="col-md-2 kitchen rounded border border-primary">
-            <a asp-page="FoodPage">
-                <img class="img-1 rounded-circle border border-danger" src="img/picca.jpg">
-            </a>
-            <h4 class="text-center">pizza</h4>
-            <p class="over">
-                <small>Куриное филе(варёное) - 150 г. Помидоры - 3шт. Яйца - 3 шт. Лук репчатый - 1шт. Перец чили - 1/5 шт. Чеснок - 1-2 зубчика.</small>
-            </p>
-        </div>
+        @for (int i = 0; i < @Model.Dishes.Length; i++)
+        {
+            <div class="col-md-2 kitchen rounded border border-primary">
+                <a asp-page="FoodPage" asp-route-id="@Model.Dishes[i].Id">
+                    <img class="img-1 rounded-circle border border-danger" src="@Model.Dishes[i].Img">
+                </a>
+                <h4 class="text-center"></h4>
+                <p class="over">
+                    <small>@Model.Dishes[i].CookingMethod</small>
+                </p>
+            </div>
+        }
 
     </div>
    

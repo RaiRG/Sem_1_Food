@@ -29,63 +29,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6abba4e-64df-47bd-a9b7-21622fa0645d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/Database/ClientDao.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Database/DishDAO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Database/Dish_Kitchen.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Database/Dish_ProductDao.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Database/Entity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Database/IConnactionOneToOne.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Database/IConnectionManyToManyDao.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Database/IDao.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Database/KitchenDao.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Database/PersonalInfoDao.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Database/ProductDao.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Models/Client.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Models/Dish.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Models/Kitchen.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Models/PersonalInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Models/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Models/Step.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/wwwroot/img/call.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/wwwroot/img/communication.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/wwwroot/img/date.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/wwwroot/img/invalid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/wwwroot/img/owner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/wwwroot/img/picca.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/wwwroot/img/portion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/wwwroot/img/smartphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/wwwroot/img/timeclock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/wwwroot/img/valid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/wwwroot/js/jquery-3.5.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/wwwroot/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Food/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Food/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Food/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Food/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/Clients/Client.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/Clients/ClientDao.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/Connections/Client_Dish.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/Connections/Client_PersonalInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/Connections/Dish_Country.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/Connections/Dish_Product.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/DaoDatabase.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/Dishes/Dish.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/Dishes/DishDAO.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/Entity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/IConnactionOneToOne.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/IConnectionManyToManyDao.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/IDao.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/PersonalInformation/PersonalInformation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/PersonalInformation/PersonalInformationDao.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/Products/Product.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/Products/ProductDao.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/Сountries/Country.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DaoDatabase/Сountries/CountryDao.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Food.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Food.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Food/Food.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Food/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Food/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Food/Startup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Food/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Food/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Database/ClientDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Database/ClientDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Database/DishDAO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Database/DishDAO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Database/Dish_ClientDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Database/Dish_ClientDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Database/Dish_Kitchen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Database/Dish_KitchenDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Database/Dish_ProductDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Database/Dish_ProductDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Database/KitchenDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Database/CounrtyKitchenDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Database/ProductDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Database/ProductDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Database/ReviewDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Database/ReviewDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Database/StepDao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Database/StepDao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Models/DishProductItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Models/FirstSecondItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Models/Review.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Models/Review.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Pages/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Pages/Add.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Pages/Add.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Pages/Add.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Pages/FoodPage.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Pages/FoodPage.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Pages/FoodPage.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Pages/FoodPage.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Pages/Forum.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Pages/Forum.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Pages/Kitchen.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Pages/Kitchen.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Pages/Kitchen.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Pages/Kitchen.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Pages/Login.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Pages/Login.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Pages/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/wwwroot/img/ava.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/wwwroot/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Test/wwwroot/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/wwwroot/js/site.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,66 +76,68 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9CD23B5E-3B0C-4F80-A807-33BCFD1D82E1/16B/Task.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/TEST/DaoDatabase/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0D8B1322-4DD3-49C7-A623-B46393987A12/2D/PageActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/52B82C28-59AD-42B4-A74A-A51A769C2E77/3C/Where.SpeedOpt.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C56B73D9-BC3C-46A3-A923-F5C1261F84E1/ab/7bf4f8ac/NpgsqlDataReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/974A667F-9CD8-41F5-95C5-E8FFAC93A3C8/13/EndpointMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0D8B1322-4DD3-49C7-A623-B46393987A12/19/PageModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Test/Database/IConnactionOneToOne.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7AD3B931-A214-4DE8-ABE3-D039F06C7A53/6D/ActionEndpointFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/10120FE5-3BEC-4C8D-9823-61DAC0F79754/9/MvcRazorDiagnosticListenerExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Test/Database/Step.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/Client.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/PersonalInformation/PersonalInformationDao.cs" />
-        <option value="$PROJECT_DIR$/Test/Pages/ArabKitchen.cshtml" />
-        <option value="$PROJECT_DIR$/Test/Pages/Forum.cshtml" />
-        <option value="$PROJECT_DIR$/Test/Models/PersonalInfo.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/Clients/ClientDao.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/PersonalInformationDao.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/Products/ProductDao.cs" />
-        <option value="$PROJECT_DIR$/Test/Program.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/Connections/IDao.cs" />
-        <option value="$PROJECT_DIR$/Test/wwwroot/js/script.js" />
-        <option value="$PROJECT_DIR$/Test/Pages/Registr.cshtml" />
-        <option value="$PROJECT_DIR$/Test/Models/Dish.cs" />
-        <option value="$PROJECT_DIR$/Test/Pages/Index.cshtml" />
-        <option value="$PROJECT_DIR$/Test/Database/Connections/Dish_Client.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/Connections/Client_Dish.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/Connections/IConnactionOneToOne.cs" />
         <option value="$PROJECT_DIR$/Test/Database/Connections/Dish_ClientDao.cs" />
         <option value="$PROJECT_DIR$/Test/Database/Connections/IConnectionManyToManyDao.cs" />
         <option value="$PROJECT_DIR$/Test/Database/Connections/Dish_Product.cs" />
         <option value="$PROJECT_DIR$/Test/Database/Dish_Product.cs" />
-        <option value="$PROJECT_DIR$/Test/Models/DishProductItem.cs" />
         <option value="$PROJECT_DIR$/Test/Database/IConnectionManyToManyDao.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/Dish_ProductDao.cs" />
         <option value="$PROJECT_DIR$/Test/Database/IDao.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/KitchenDao.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/ProductDao.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/StepDao.cs" />
-        <option value="$PROJECT_DIR$/Test/Models/Review.cs" />
         <option value="$PROJECT_DIR$/Test/Models/Step.cs" />
         <option value="$PROJECT_DIR$/Test/Database/Entity.cs" />
         <option value="$PROJECT_DIR$/Test/Models/Client.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/ReviewDao.cs" />
-        <option value="$PROJECT_DIR$/Test/Pages/FoodPage.cshtml.cs" />
-        <option value="$PROJECT_DIR$/Test/Pages/FoodPage.cshtml" />
-        <option value="$PROJECT_DIR$/Test/Pages/Kitchen.cshtml" />
-        <option value="$PROJECT_DIR$/Test/Pages/Kitchen.cshtml.cs" />
         <option value="$PROJECT_DIR$/Test/Pages/Index.cshtml.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/DishDAO.cs" />
         <option value="$PROJECT_DIR$/Test/Pages/Login.cshtml" />
         <option value="$PROJECT_DIR$/Test/Pages/Registr.cshtml.cs" />
-        <option value="$PROJECT_DIR$/Test/Pages/Shared/_Layout.cshtml" />
-        <option value="$PROJECT_DIR$/Test/Pages/Login.cshtml.cs" />
         <option value="$PROJECT_DIR$/Test/Pages/Logout.cshtml" />
         <option value="$PROJECT_DIR$/Test/Pages/Logout.cshtml.cs" />
         <option value="$PROJECT_DIR$/Test/Pages/Profile.cshtml" />
-        <option value="$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs" />
-        <option value="$PROJECT_DIR$/Test/Database/ClientDao.cs" />
         <option value="$PROJECT_DIR$/Test/Database/PersonalInfoDao.cs" />
         <option value="$PROJECT_DIR$/Test/Startup.cs" />
+        <option value="$PROJECT_DIR$/Test/Pages/Login.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Test/Database/ClientDao.cs" />
+        <option value="$PROJECT_DIR$/Test/Database/CounrtyKitchenDao.cs" />
+        <option value="$PROJECT_DIR$/Test/Models/DishProductItem.cs" />
+        <option value="$PROJECT_DIR$/Test/Models/Dish.cs" />
+        <option value="$PROJECT_DIR$/Test/Database/Dish_Country.cs" />
+        <option value="$PROJECT_DIR$/Test/Database/Dish_ClientAddDao.cs" />
+        <option value="$PROJECT_DIR$/Test/Database/DishDAO.cs" />
+        <option value="$PROJECT_DIR$/Test/Pages/Add.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Test/Database/ProductDao.cs" />
+        <option value="$PROJECT_DIR$/Test/Database/Dish_KitchenDao.cs" />
+        <option value="$PROJECT_DIR$/Test/Database/Dish_ProductDao.cs" />
+        <option value="$PROJECT_DIR$/Test/wwwroot/js/script.js" />
+        <option value="$PROJECT_DIR$/Test/Pages/Add.cshtml" />
+        <option value="$PROJECT_DIR$/Test/Database/StepDao.cs" />
+        <option value="$PROJECT_DIR$/Test/Pages/Forum.cshtml" />
+        <option value="$PROJECT_DIR$/Test/Models/FirstSecondItem.cs" />
+        <option value="$PROJECT_DIR$/Test/Database/Dish_ClientDao.cs" />
+        <option value="$PROJECT_DIR$/Test/Pages/MyDishes.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Test/Pages/MyDishes.cshtml" />
+        <option value="$PROJECT_DIR$/Test/Database/BookmarkDao.cs" />
+        <option value="$PROJECT_DIR$/Test/Database/KitchenDao.cs" />
+        <option value="$PROJECT_DIR$/Test/Pages/AddToBookmarks.cshtml" />
+        <option value="$PROJECT_DIR$/Test/Models/Review.cs" />
+        <option value="$PROJECT_DIR$/Test/Pages/AddReview.cshtml" />
+        <option value="$PROJECT_DIR$/Test/Pages/AddReview.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Test/Pages/FoodPage.cshtml" />
+        <option value="$PROJECT_DIR$/Test/Pages/AddToBookmarks.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Test/Database/ReviewDao.cs" />
+        <option value="$PROJECT_DIR$/Test/Pages/FoodPage.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Test/Pages/Kitchen.cshtml" />
+        <option value="$PROJECT_DIR$/Test/Pages/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/Test/Pages/Kitchen.cshtml.cs" />
       </list>
     </option>
   </component>
@@ -311,7 +282,9 @@
       <workItem from="1607333757059" duration="2269000" />
       <workItem from="1607629027567" duration="4129000" />
       <workItem from="1607690575318" duration="600000" />
-      <workItem from="1607703001425" duration="16180000" />
+      <workItem from="1607703001425" duration="17571000" />
+      <workItem from="1607792479487" duration="2042000" />
+      <workItem from="1607866504295" duration="30308000" />
     </task>
     <servers />
   </component>
@@ -344,106 +317,106 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="257" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1536.824@0.0.1536.824" timestamp="1607016634657" />
-    <state width="536" height="464" key="DebuggerActiveHint" timestamp="1607718975720">
+    <state width="536" height="352" key="DebuggerActiveHint" timestamp="1607894758426">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="536" height="464" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1607718975720" />
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1607719181184">
+    <state width="536" height="352" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1607894758426" />
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1607895615145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607719181184" />
-    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1607719181183">
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607895615145" />
+    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1607895615145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607719181183" />
-    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1607719181183">
+    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607895615145" />
+    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1607895615145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607719181183" />
-    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1607719181184">
+    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607895615145" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1607895615145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607719181184" />
-    <state width="1493" height="213" key="GridCell.Tab.1.bottom" timestamp="1607719041823">
+    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607895615145" />
+    <state width="1493" height="164" key="GridCell.Tab.1.bottom" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.1.center" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.1.center" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.1.left" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.1.left" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.1.right" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.1.right" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.2.bottom" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.2.bottom" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.2.center" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.2.center" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.2.left" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.2.left" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.2.right" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.2.right" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.3.bottom" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.3.bottom" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.3.center" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.3.center" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.3.left" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.3.left" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.3.right" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.3.right" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.4.bottom" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.4.bottom" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.4.center" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.4.center" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.4.left" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.4.left" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
-    <state width="1493" height="213" key="GridCell.Tab.4.right" timestamp="1607719041823">
+    <state width="1493" height="164" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
+    <state width="1493" height="164" key="GridCell.Tab.4.right" timestamp="1607895522407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1607719041823" />
+    <state width="1493" height="164" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1607895522407" />
     <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1607704513144">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824@0.0.1536.824" timestamp="1607704513144" />
-    <state x="595" y="98" key="RiderGenerateDialog" timestamp="1607090453507">
+    <state x="595" y="98" key="RiderGenerateDialog" timestamp="1607878947089">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="595" y="98" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1607090453507" />
-    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1607718309121">
+    <state x="595" y="98" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1607878947089" />
+    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1607885422490">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1607718309121" />
-    <state x="761" y="-7" width="782" height="838" maximized="true" key="dock-window-1" timestamp="1607003372155">
+    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1607885422490" />
+    <state x="0" y="0" width="1157" height="596" key="dock-window-1" timestamp="1607873495664">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="761" y="-7" width="782" height="838" maximized="true" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1607003372155" />
+    <state x="0" y="0" width="1157" height="596" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1607873495664" />
     <state x="-6" y="0" width="632" height="830" key="dock-window-2" timestamp="1605722643763">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -459,40 +432,19 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/DaoDatabase/Clients/ClientDao.cs</url>
           <line>79</line>
-          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\DaoDatabase\Clients\ClientDao.cs" initialLine="67">
-            <startOffsets>
-              <option value="2683" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2772" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\DaoDatabase\Clients\ClientDao.cs" initialLine="67" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/DaoDatabase/Clients/ClientDao.cs</url>
           <line>38</line>
-          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\DaoDatabase\Clients\ClientDao.cs" initialLine="39">
-            <startOffsets>
-              <option value="1063" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1095" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\DaoDatabase\Clients\ClientDao.cs" initialLine="39" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/DaoDatabase/Clients/ClientDao.cs</url>
           <line>58</line>
-          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\DaoDatabase\Clients\ClientDao.cs" initialLine="59">
-            <startOffsets>
-              <option value="1982" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2032" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\DaoDatabase\Clients\ClientDao.cs" initialLine="59" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
@@ -526,117 +478,65 @@
           <line>29</line>
           <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\FoodPage.cshtml.cs" initialLine="27">
             <startOffsets>
-              <option value="1691" />
+              <option value="2276" />
             </startOffsets>
             <endOffsets>
-              <option value="1732" />
+              <option value="2317" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Database/Dish_ProductDao.cs</url>
-          <line>66</line>
+          <line>69</line>
           <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Database\Dish_ProductDao.cs" initialLine="66">
             <startOffsets>
-              <option value="2665" />
+              <option value="2632" />
             </startOffsets>
             <endOffsets>
-              <option value="2666" />
+              <option value="2633" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Database/Dish_ProductDao.cs</url>
-          <line>61</line>
+          <line>64</line>
           <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Database\Dish_ProductDao.cs" initialLine="61">
             <startOffsets>
-              <option value="2474" />
+              <option value="2447" />
             </startOffsets>
             <endOffsets>
-              <option value="2475" />
+              <option value="2448" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Test/Database/ProductDao.cs</url>
-          <line>69</line>
-          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Database\ProductDao.cs" initialLine="69">
-            <startOffsets>
-              <option value="2657" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2689" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Test/Pages/FoodPage.cshtml.cs</url>
-          <line>34</line>
-          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\FoodPage.cshtml.cs" initialLine="31">
-            <startOffsets>
-              <option value="1613" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1678" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Database/ReviewDao.cs</url>
-          <line>64</line>
+          <line>62</line>
           <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Database\ReviewDao.cs" initialLine="64">
             <startOffsets>
-              <option value="2741" />
+              <option value="3110" />
             </startOffsets>
             <endOffsets>
-              <option value="2742" />
+              <option value="3111" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Pages/FoodPage.cshtml.cs</url>
-          <line>43</line>
+          <line>46</line>
           <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\FoodPage.cshtml.cs" initialLine="42">
             <startOffsets>
-              <option value="1613" />
+              <option value="2198" />
             </startOffsets>
             <endOffsets>
-              <option value="1678" />
+              <option value="2263" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Test/Pages/Registr.cshtml.cs</url>
-          <line>37</line>
-          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Registr.cshtml.cs" initialLine="37">
-            <startOffsets>
-              <option value="1140" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1158" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Test/Pages/Registr.cshtml.cs</url>
-          <line>43</line>
-          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Registr.cshtml.cs" initialLine="41">
-            <startOffsets>
-              <option value="1264" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1308" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Pages/Registr.cshtml.cs</url>
@@ -653,42 +553,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Database/ClientDao.cs</url>
-          <line>100</line>
+          <line>99</line>
           <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Database\ClientDao.cs" initialLine="100">
             <startOffsets>
-              <option value="4612" />
+              <option value="4581" />
             </startOffsets>
             <endOffsets>
-              <option value="4638" />
+              <option value="4607" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Pages/Login.cshtml.cs</url>
-          <line>59</line>
+          <line>67</line>
           <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Login.cshtml.cs" initialLine="57">
             <startOffsets>
-              <option value="1899" />
+              <option value="1948" />
             </startOffsets>
             <endOffsets>
-              <option value="1919" />
+              <option value="1968" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Test/Database/ClientDao.cs</url>
-          <line>77</line>
-          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Database\ClientDao.cs" initialLine="77">
-            <startOffsets>
-              <option value="3446" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3447" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Pages/Logout.cshtml.cs</url>
@@ -705,107 +592,421 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs</url>
-          <line>55</line>
+          <line>52</line>
           <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Profile.cshtml.cs" initialLine="52">
             <startOffsets>
-              <option value="1779" />
+              <option value="1917" />
             </startOffsets>
             <endOffsets>
-              <option value="1786" />
+              <option value="1924" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Database/ClientDao.cs</url>
-          <line>144</line>
+          <line>143</line>
           <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Database\ClientDao.cs" initialLine="144">
             <startOffsets>
-              <option value="5912" />
+              <option value="5891" />
             </startOffsets>
             <endOffsets>
-              <option value="6289" />
+              <option value="6268" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs</url>
-          <line>56</line>
-          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Profile.cshtml.cs" initialLine="53">
-            <startOffsets>
-              <option value="1799" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1853" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Database/ClientDao.cs</url>
-          <line>171</line>
+          <line>170</line>
           <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Database\ClientDao.cs" initialLine="171">
             <startOffsets>
-              <option value="6830" />
+              <option value="6809" />
             </startOffsets>
             <endOffsets>
-              <option value="6848" />
+              <option value="6827" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs</url>
-          <line>17</line>
+          <line>15</line>
           <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Profile.cshtml.cs" initialLine="17">
             <startOffsets>
-              <option value="406" />
+              <option value="448" />
             </startOffsets>
             <endOffsets>
-              <option value="416" />
+              <option value="458" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs</url>
-          <line>27</line>
+          <line>24</line>
           <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Profile.cshtml.cs" initialLine="27">
             <startOffsets>
-              <option value="831" />
+              <option value="863" />
             </startOffsets>
             <endOffsets>
-              <option value="883" />
+              <option value="915" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs</url>
-          <line>40</line>
+          <line>35</line>
           <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Profile.cshtml.cs" initialLine="40">
             <startOffsets>
-              <option value="1368" />
+              <option value="1499" />
             </startOffsets>
             <endOffsets>
-              <option value="1369" />
+              <option value="1500" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs</url>
-          <line>59</line>
+          <line>57</line>
           <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Profile.cshtml.cs" initialLine="59">
             <startOffsets>
-              <option value="1971" />
+              <option value="-1" />
             </startOffsets>
             <endOffsets>
-              <option value="1971" />
+              <option value="-1" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs</url>
+          <line>55</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Profile.cshtml.cs" initialLine="56">
+            <startOffsets>
+              <option value="2014" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2068" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/Login.cshtml.cs</url>
+          <line>44</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Login.cshtml.cs" initialLine="40">
+            <startOffsets>
+              <option value="969" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1006" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/Login.cshtml.cs</url>
+          <line>38</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Login.cshtml.cs" initialLine="37">
+            <startOffsets>
+              <option value="957" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1069" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Database/ClientDao.cs</url>
+          <line>83</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Database\ClientDao.cs" initialLine="83">
+            <startOffsets>
+              <option value="3536" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3568" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/Registr.cshtml.cs</url>
+          <line>35</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Registr.cshtml.cs" initialLine="35">
+            <startOffsets>
+              <option value="925" />
+            </startOffsets>
+            <endOffsets>
+              <option value="955" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/Registr.cshtml.cs</url>
+          <line>36</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Registr.cshtml.cs" initialLine="36">
+            <startOffsets>
+              <option value="968" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1010" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/Registr.cshtml.cs</url>
+          <line>68</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Registr.cshtml.cs" initialLine="68">
+            <startOffsets>
+              <option value="2160" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2201" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/Login.cshtml.cs</url>
+          <line>49</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Login.cshtml.cs" initialLine="50">
+            <startOffsets>
+              <option value="1382" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1409" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/Login.cshtml.cs</url>
+          <line>53</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Login.cshtml.cs" initialLine="54">
+            <startOffsets>
+              <option value="1471" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1625" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/Login.cshtml.cs</url>
+          <line>57</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Login.cshtml.cs" initialLine="58">
+            <startOffsets>
+              <option value="1696" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1834" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Profile.cshtml.cs" initialLine="20">
+            <startOffsets>
+              <option value="573" />
+            </startOffsets>
+            <endOffsets>
+              <option value="619" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Profile.cshtml.cs" initialLine="21">
+            <startOffsets>
+              <option value="632" />
+            </startOffsets>
+            <endOffsets>
+              <option value="633" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/Login.cshtml.cs</url>
+          <line>76</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\Login.cshtml.cs" initialLine="75">
+            <startOffsets>
+              <option value="2392" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2417" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Database/ClientDao.cs</url>
+          <line>87</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Database\ClientDao.cs" initialLine="87">
+            <startOffsets>
+              <option value="3633" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3634" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Database/StepDao.cs</url>
+          <line>92</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Database\StepDao.cs" initialLine="92">
+            <startOffsets>
+              <option value="3813" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3893" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Database/StepDao.cs</url>
+          <line>85</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Database\StepDao.cs" initialLine="85">
+            <startOffsets>
+              <option value="3529" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3702" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/MyDishes.cshtml.cs</url>
+          <line>34</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\MyDishes.cshtml.cs" initialLine="34">
+            <startOffsets>
+              <option value="1348" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1349" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/MyDishes.cshtml</url>
+          <line>8</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\MyDishes.cshtml" initialLine="8" isMultiMethodBreakpoint="true">
+            <option name="multiMethodBreakpoint" value="true" />
+            <startOffsets>
+              <option value="-1" />
+            </startOffsets>
+            <endOffsets>
+              <option value="-1" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/AddToBookmarks.cshtml.cs</url>
+          <line>13</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\AddToBookmarks.cshtml.cs" initialLine="13">
+            <startOffsets>
+              <option value="341" />
+            </startOffsets>
+            <endOffsets>
+              <option value="441" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Database/ReviewDao.cs</url>
+          <line>37</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Database\ReviewDao.cs" initialLine="37">
+            <startOffsets>
+              <option value="1304" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1326" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Database/ReviewDao.cs</url>
+          <line>73</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Database\ReviewDao.cs" initialLine="70">
+            <startOffsets>
+              <option value="3142" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3143" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/FoodPage.cshtml.cs</url>
+          <line>50</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\FoodPage.cshtml.cs" initialLine="42">
+            <startOffsets>
+              <option value="1964" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2009" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/FoodPage.cshtml</url>
+          <line>6</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\FoodPage.cshtml" initialLine="6" isMultiMethodBreakpoint="true">
+            <option name="multiMethodBreakpoint" value="true" />
+            <startOffsets>
+              <option value="-1" />
+            </startOffsets>
+            <endOffsets>
+              <option value="-1" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/FoodPage.cshtml.cs</url>
+          <line>35</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\FoodPage.cshtml.cs" initialLine="35">
+            <startOffsets>
+              <option value="1148" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1149" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Test/Pages/FoodPage.cshtml.cs</url>
+          <line>82</line>
+          <properties documentPath="C:\Users\Railina\GitHub\Sem_1_Food\Food\Test\Pages\FoodPage.cshtml.cs" initialLine="82">
+            <startOffsets>
+              <option value="3379" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3427" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="156" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

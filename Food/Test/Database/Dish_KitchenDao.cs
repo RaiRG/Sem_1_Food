@@ -3,30 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using Npgsql;
 
-namespace Test
+namespace Test.Connections
 {
-    public class Dish_ProductDao
+    //TODO: блюдо и страна какое отношение??
+    public class Dish_KitchenDao
     {
         private string connectionString =
             @"Server=127.0.0.1;Port=5432;Database=Test;User Id=postgres;Password=postgres;";
 
-        private static List<FirstSecondItem> connectDishProduct;
+        private static List<FirstSecondItem> connectDishKitchen;
 
-        public List<FirstSecondItem> ConnectDishProduct => connectDishProduct;
+        public List<FirstSecondItem> ConnectDishKitchen => connectDishKitchen;
 
         private static bool isFirstLaunch = true;
 
-        public Dish_ProductDao()
+        public Dish_KitchenDao()
         {
             if (isFirstLaunch)
             {
-                connectDishProduct = new List<FirstSecondItem>();
+                connectDishKitchen = new List<FirstSecondItem>();
                 isFirstLaunch = false;
                 using (NpgsqlConnection connect = new NpgsqlConnection(connectionString)) // подключаемся к бд
                 {
                     connect.Open();
                     var selectAll = new NpgsqlCommand(
-                        "SELECT * FROM dish_product;", connect);
+                        "SELECT * FROM dish_kitchen;", connect);
                     var allreader = selectAll.ExecuteReader();
                     if (allreader.HasRows) // если есть данные
                     {
@@ -43,14 +44,14 @@ namespace Test
                                         case "dish_id":
                                             current.FirstId = (int) tableName;
                                             break;
-                                        case "product_id":
+                                        case "kitchen_id":
                                             current.SecondId = (int) tableName;
                                             break;
                                     }
                                 }
                             }
 
-                            connectDishProduct.Add(current);
+                            connectDishKitchen.Add(current);
                         }
                     }
                 }
@@ -59,12 +60,12 @@ namespace Test
 
         public List<int> GetDishesIdByProductId(int prosuctId)
         {
-            return ConnectDishProduct.Where(x => x.SecondId == prosuctId).Select(x => x.FirstId).ToList();
+            return ConnectDishKitchen.Where(x => x.SecondId == prosuctId).Select(x => x.FirstId).ToList();
         }
 
         public List<int> GetProductIdByDishesId(int dishId)
         {
-            return ConnectDishProduct.Where(x => x.FirstId == dishId).Select(x => x.SecondId).ToList();
+            return ConnectDishKitchen.Where(x => x.FirstId == dishId).Select(x => x.SecondId).ToList();
         }
 
         public void Insert(int firstId, int secondId)
@@ -73,11 +74,11 @@ namespace Test
             {
                 connection.Open();
                 var command = new NpgsqlCommand(
-                    "INSERT INTO dish_product (dish_id, product_id ) VALUES ( " +
+                    "INSERT INTO dish_kitchen (dish_id, kitchen_id ) VALUES ( " +
                     firstId + ", " + secondId + ")", connection);
                 command.ExecuteNonQuery();
             }
-            ConnectDishProduct.Add(new FirstSecondItem() {FirstId = firstId, SecondId = secondId});
+            ConnectDishKitchen.Add(new FirstSecondItem() {FirstId = firstId, SecondId = secondId});
         }
     }
 }

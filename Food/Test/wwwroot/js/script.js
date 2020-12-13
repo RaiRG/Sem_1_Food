@@ -8,25 +8,30 @@ function addMessege()
 
 	document.getElementById("inputmessege").value = "";
 }
-
+var numberIngr =0;
 function addIngredients()
 {
-	var b = "<input type=\"text\" name=\"\" class=\"menucalor\" style=\"margin-bottom: 10px;\"> <br>"
-
-	$("#Ingredients").append(b);
+	numberIngr=numberIngr+1;
+	if (numberIngr<10) {
+		var b = '<input type=\"text\" name=\"ingridient_' + numberIngr + '\" class ="form-control" style=\"background-color: #cedd81; margin-bottom: 10px;\"> <br>'
+		$("#Ingredients").append(b);
+	}
 }
-
+var numberStep =0;
 function addStep()
 {
-	var b = "<div>" +
-		"<h3>Шаг</h3>" +
-		"<label for=\"img\" class=\"h6\">Фото шага : </label> <br>" +
-		"<input class=\"btn btn-success\" type=\"file\" name=\"img\">" +
-		"<h6>Описание шага :</h6>" +
-		"<textarea form=\"#add\" name=\"discription\" class=\"menucalor\" style=\"width: 60%;height: 200px;\"></textarea>" +
-		"</div>"
+	numberStep++;
+	if (numberStep<5) {
+		var b = '<div>' +
+			'<h3>Шаг</h3>' +
+			'<label class=\"h6\">Фото шага : </label> <br>' +
+			'<input class=\"btn btn-success\" type=\"file\" name=\"img_' + numberStep + '\">' +
+			'<h6>Описание шага :</h6>' +
+			'<input type=\"text\" name=\"Description_' + numberStep + '\" class ="form-control" style=\"background-color: #cedd81; width: 60%;height: 200px;\">' +
+			'</div>'
 
-	$("#steps").append(b);
+		$("#steps").append(b);
+	}
 }
 
 

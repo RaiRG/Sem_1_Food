@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Test.Database;
 
 namespace Test.Pages
 {
@@ -21,16 +22,18 @@ namespace Test.Pages
         public Dish[] top = new Dish[NumberInScrollItem];
         public Dish[] moreNew = new Dish[NumberInScrollItem];
         public Dish[] quick = new Dish[NumberInScrollItem];
+        
 
         private DishDAO dishTable;
+        private BookmarkDao bookmarkDao;
 
         public void OnGet()
         {
             dishTable = new DishDAO();
             quick = dishTable.AllEntities.OrderByDescending(x => x.CookTime).Take(NumberInScrollItem).ToArray();
             moreNew = dishTable.AllEntities.OrderByDescending(x => x.CreatingDate).Take(NumberInScrollItem).ToArray();
-            //TODO: 
-            top = moreNew;
+            var topDishesId = bookmarkDao.ConnectBookmarkDishClientId.GroupBy(x=>x)
+            //top = moreNew;
         }
 
         public void OnPost()

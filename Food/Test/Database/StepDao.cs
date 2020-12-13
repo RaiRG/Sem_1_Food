@@ -75,12 +75,16 @@ namespace Test.Database
             valueis.Append(newEntity.DishID + ", ");
             valueis.Append(newEntity.NumberOfStep + ", ");
             valueis.Append("'" + newEntity.Description + "'" + ", ");
-            valueis.Append("'" + newEntity.Img + "'");
+            if (newEntity.Img == null)
+            {
+                newEntity.Img = "img/default.png";
+            }
+            valueis.Append( "'"+newEntity.Img + "'");
             using (var connection = new NpgsqlConnection(connectionString)) // подключаемся к бд
             {
                 connection.Open();
                 var command = new NpgsqlCommand(
-                    "INSERT INTO clients (dishid, numberofstep, desription, img) VALUES ( " +
+                    "INSERT INTO steps (dishid, numberofstep, description, img) VALUES ( " +
                     valueis + ")", connection);
                 command.ExecuteNonQuery();
             }

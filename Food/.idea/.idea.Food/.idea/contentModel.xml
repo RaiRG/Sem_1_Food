@@ -27,9 +27,11 @@
           </e>
         </e>
         <e p="Database" t="Include">
+          <e p="BookmarkDao.cs" t="Include" />
           <e p="ClientDao.cs" t="Include" />
+          <e p="CounrtyKitchenDao.cs" t="Include" />
           <e p="Dish_ClientDao.cs" t="Include" />
-          <e p="Dish_Kitchen.cs" t="Include" />
+          <e p="Dish_KitchenDao.cs" t="Include" />
           <e p="Dish_ProductDao.cs" t="Include" />
           <e p="DishDAO.cs" t="Include" />
           <e p="Entity.cs" t="Include" />
@@ -45,7 +47,7 @@
         <e p="Models" t="Include">
           <e p="Client.cs" t="Include" />
           <e p="Dish.cs" t="Include" />
-          <e p="DishProductItem.cs" t="Include" />
+          <e p="FirstSecondItem.cs" t="Include" />
           <e p="Kitchen.cs" t="Include" />
           <e p="PersonalInfo.cs" t="Include" />
           <e p="Product.cs" t="Include" />
@@ -65,6 +67,8 @@
           <e p="_ViewStart.cshtml" t="Include" />
           <e p="Add.cshtml" t="Include" />
           <e p="Add.cshtml.cs" t="Include" />
+          <e p="AddToBookmarks.cshtml" t="Include" />
+          <e p="AddToBookmarks.cshtml.cs" t="Include" />
           <e p="AdminPage.cshtml" t="Include" />
           <e p="AdminPage.cshtml.cs" t="Include" />
           <e p="Contacts.cshtml" t="Include" />
@@ -83,6 +87,8 @@
           <e p="Login.cshtml.cs" t="Include" />
           <e p="Logout.cshtml" t="Include" />
           <e p="Logout.cshtml.cs" t="Include" />
+          <e p="MyDishes.cshtml" t="Include" />
+          <e p="MyDishes.cshtml.cs" t="Include" />
           <e p="Privacy.cshtml" t="Include" />
           <e p="Privacy.cshtml.cs" t="Include" />
           <e p="Profile.cshtml" t="Include" />
@@ -108,7 +114,6 @@
           </e>
           <e p="favicon.ico" t="Include" />
           <e p="img" t="Include">
-            <e p="ava.jpg" t="Include" />
             <e p="call.png" t="Include" />
             <e p="communication.png" t="Include" />
             <e p="date.png" t="Include" />
@@ -124,7 +129,6 @@
           <e p="js" t="Include">
             <e p="jquery-3.5.1.min.js" t="Include" />
             <e p="script.js" t="Include" />
-            <e p="site.js" t="Include" />
           </e>
           <e p="lib" t="Include">
             <e p="bootstrap" t="Include">

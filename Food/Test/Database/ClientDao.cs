@@ -86,7 +86,6 @@ namespace Test
 
         public void Insert(Client newEntity)
         {
-            newEntity.Id = ID;
             var valueis = new StringBuilder();
             valueis.Append(newEntity.Id + ", ");
             valueis.Append("'" + newEntity.Name + "'" + ", ");
@@ -109,7 +108,7 @@ namespace Test
             }
 
             allEntities.Add(newEntity);
-            dictionaryOfEntities.Add(ID, newEntity);
+            dictionaryOfEntities.Add(newEntity.Id, newEntity);
         }
 
         public void Delete(Client client)

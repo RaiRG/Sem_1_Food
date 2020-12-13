@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Npgsql;
@@ -42,14 +43,17 @@ namespace Test
                             for (var i = 0; i < allreader.FieldCount; i++)
                             {
                                 var tableName = allreader.GetValue(i);
-                                switch (allreader.GetName(i))
+                                if (tableName != DBNull.Value)
                                 {
-                                    case "name":
-                                        current.Name = (string) tableName;
-                                        break;
-                                    case "id":
-                                        current.Id = (int) tableName;
-                                        break;
+                                    switch (allreader.GetName(i))
+                                    {
+                                        case "name":
+                                            current.Name = (string) tableName;
+                                            break;
+                                        case "id":
+                                            current.Id = (int) tableName;
+                                            break;
+                                    }
                                 }
                             }
                             allEntities.Add(current);
@@ -81,9 +85,11 @@ namespace Test
                 connection.Open();
                 var command = new NpgsqlCommand(
                     "INSERT INTO products (id, name) VALUES ( " +
-                    valueis + ")");
+                    valueis + ")", connection);
                 command.ExecuteNonQuery();
             }
+            allEntities.Add(newEntity);
+            dictionaryOfEntities.Add(newEntity.Id, newEntity);
         }
 
         public void Delete(Product entity)

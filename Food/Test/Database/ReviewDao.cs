@@ -6,17 +6,18 @@ using Npgsql;
 
 namespace Test.Database
 {
-    public class ReviewDao : IDao<Review, (int, int)>
+    public class ReviewDao : IDao<Review, int>
     {
+        private int Id => dictionaryOfEntities.Count;
         private static readonly string connectionString =
             @"Server=127.0.0.1;Port=5432;Database=Test;User Id=postgres;Password=postgres;";
         private static List<Review> allEntities;
 
-        private static Dictionary<(int, int), Review> dictionaryOfEntities;
+        private static Dictionary<int, Review> dictionaryOfEntities;
 
         public List<Review> AllEntities => allEntities;
 
-        public Dictionary<(int, int), Review> DictionaryOfEntities => dictionaryOfEntities;
+        public Dictionary<int, Review> DictionaryOfEntities => dictionaryOfEntities;
 
         private static bool isFirstLaunch = true;
 
@@ -26,7 +27,7 @@ namespace Test.Database
             if (isFirstLaunch)
             {
                 allEntities = new List<Review>();
-                dictionaryOfEntities = new Dictionary<(int, int), Review>();
+                dictionaryOfEntities = new Dictionary<int, Review>();
                 isFirstLaunch = false;
                 using (NpgsqlConnection connect = new NpgsqlConnection(connectionString)) // подключаемся к бд
                 {
@@ -42,54 +43,62 @@ namespace Test.Database
                             for (int i = 0; i < allreader.FieldCount; i++)
                             {
                                 object tableName = allreader.GetValue(i);
-                                switch (allreader.GetName(i).ToString())
+                                if (tableName != DBNull.Value)
                                 {
-                                    case "dish_id":
-                                        current.DishId = (int) tableName;
-                                        break;
-                                    case "client_id":
-                                        current.ClientID = (int) tableName;
-                                        break;
-                                    case "send_time":
-                                        current.SendTime = (TimeSpan) tableName;
-                                        break;
-                                    case "description":
-                                        current.Description = (string) tableName;
-                                        break;
+                                    switch (allreader.GetName(i).ToString())
+                                    {
+                                        case "id":
+                                            current.Id = (int) tableName;
+                                            break;
+                                        case "dish_id":
+                                            current.DishId = (int) tableName;
+                                            break;
+                                        case "client_id":
+                                            current.ClientID = (int) tableName;
+                                            break;
+                                        case "send_time":
+                                            current.SendTime = (DateTime) tableName;
+                                            break;
+                                        case "description":
+                                            current.Description = (string) tableName;
+                                            break;
+                                    }
                                 }
                             }
 
                             allEntities.Add(current);
-                            dictionaryOfEntities.Add((current.DishId, current.ClientID), current);
+                            dictionaryOfEntities.Add(current.Id, current);
                         }
                     }
                 }
             }
         }
 
-        public Review GetOneById((int, int) id)
+        public Review GetOneById(int id)
         {
             return DictionaryOfEntities[id];
         }
-
         public void Insert(Review newEntity)
         {
             var valueis = new StringBuilder();
+            newEntity.Id = Id;
+            valueis.Append(newEntity.Id + ", ");
             valueis.Append(newEntity.DishId + ", ");
             valueis.Append(newEntity.ClientID + ", ");
             valueis.Append("'" + newEntity.SendTime + "'" + ", ");
+            //valueis.Append("'" + newEntity.DateTime + "'" + ", ");
             valueis.Append("'" + newEntity.Description + "'");
             using (var connection = new NpgsqlConnection(connectionString)) // подключаемся к бд
             {
                 connection.Open();
                 var command = new NpgsqlCommand(
-                    "INSERT INTO reviews (dish_id, client_id, send_time, description) VALUES ( " +
+                    "INSERT INTO reviews (id, dish_id, client_id, send_time, description) VALUES ( " +
                     valueis + ")", connection);
                 command.ExecuteNonQuery();
             }
 
             allEntities.Add(newEntity);
-            dictionaryOfEntities.Add((newEntity.DishId, newEntity.ClientID), newEntity);
+            dictionaryOfEntities.Add(newEntity.Id, newEntity);
         }
 
         public void Delete(Review client)
@@ -108,19 +117,11 @@ namespace Test.Database
             // }
         }
 
-        public void Delete((int, int) id)
+        public void Delete(int id)
         {
             throw new NotImplementedException();
-            // allEntities = AllEntities
-            //     .Where(x => (x.DishId != id.Item1 && x.ClientID != id.Item2)).ToList();
-            // dictionaryOfEntities.Remove(id);
-            // using (var connection = new NpgsqlConnection(connectionString)) // подключаемся к бд
-            // {
-            //     connection.Open();
-            //     var command = new NpgsqlCommand(
-            //         "DELETE FROM clients WHERE id = " + id, connection);
-            //     command.ExecuteNonQuery();
-            // }
         }
+
+       
     }
 }

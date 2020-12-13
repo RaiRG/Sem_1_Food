@@ -8,14 +8,14 @@ namespace Test
 {
     public class DishDAO : IDao<Dish, int>
     {
-        //TODO: изменить строку подключения 
+        //TODO: Внести country
         private string connectionString =
             @"Server=127.0.0.1;Port=5432;Database=Test;User Id=postgres;Password=postgres;";
 
         static Dictionary<int, Dish> dictionaryOfEntities = new Dictionary<int, Dish>();
         static List<Dish> allEntities = new List<Dish>();
 
-         private static bool isFirstLaunch = true;
+        private static bool isFirstLaunch = true;
 
         public DishDAO()
         {
@@ -36,29 +36,32 @@ namespace Test
                             for (int i = 0; i < allreader.FieldCount; i++)
                             {
                                 object tableName = allreader.GetValue(i);
-                                switch (allreader.GetName(i).ToString())
+                                if (tableName != DBNull.Value)
                                 {
-                                    case "name":
-                                        current.Name = (string) tableName;
-                                        break;
-                                    case "img":
-                                        current.Img = (string) tableName;
-                                        break;
-                                    case "id":
-                                        current.Id = (int) tableName;
-                                        break;
-                                    case "portions":
-                                        current.Portions = (int) tableName;
-                                        break;
-                                    case "cooktime":
-                                        current.CookTime = (TimeSpan) tableName;
-                                        break;
-                                    case "cookingmethod":
-                                        current.CookingMethod = (string)tableName;
-                                        break;
-                                    case "creatingdate":
-                                        current.CreatingDate = (DateTime)tableName;
-                                        break;
+                                    switch (allreader.GetName(i).ToString())
+                                    {
+                                        case "name":
+                                            current.Name = (string) tableName;
+                                            break;
+                                        case "img":
+                                            current.Img = (string) tableName;
+                                            break;
+                                        case "id":
+                                            current.Id = (int) tableName;
+                                            break;
+                                        case "portions":
+                                            current.Portions = (int) tableName;
+                                            break;
+                                        case "cooktime":
+                                            current.CookTime = (TimeSpan) tableName;
+                                            break;
+                                        case "cookingmethod":
+                                            current.CookingMethod = (string) tableName;
+                                            break;
+                                        case "creatingdate":
+                                            current.CreatingDate = (DateTime) tableName;
+                                            break;
+                                    }
                                 }
                             }
                             allEntities.Add(current);
@@ -86,14 +89,19 @@ namespace Test
 
         public void Insert(Dish newEntity)
         {
+            newEntity.Id = ID;
             var valueis = new StringBuilder();
-            valueis.Append(ID + ", ");
-            valueis.Append("'" + newEntity.Name + "'");
-            valueis.Append("'" + newEntity.CreatingDate.Year + "-" + newEntity.CreatingDate.Month + "-"+ newEntity.CreatingDate.Day + "'");
-            valueis.Append("'" + newEntity.CookTime.Hours + ":" + newEntity.CookTime.Minutes + "'"); 
+            valueis.Append(newEntity.Id + ", ");
+            valueis.Append("'" + newEntity.Name + "',");
+            valueis.Append("'" + newEntity.CreatingDate.Year + "-" + newEntity.CreatingDate.Month + "-"+ newEntity.CreatingDate.Day + "',");
+            valueis.Append("'" + newEntity.CookTime.Hours + ":" + newEntity.CookTime.Minutes + "',"); 
             valueis.Append(newEntity.Portions + ", ");
             valueis.Append("'" + newEntity.CookingMethod + "'");
-            valueis.Append("'" + newEntity.Img + "'");
+            if (newEntity.Img == null)
+            {
+                newEntity.Img = "img/default.png";
+            }
+            valueis.Append(", '" + newEntity.Img + "'");
             using (NpgsqlConnection connection = new NpgsqlConnection(connectionString)) // подключаемся к бд
             {
                 connection.Open();

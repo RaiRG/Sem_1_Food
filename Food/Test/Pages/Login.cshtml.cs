@@ -29,6 +29,7 @@ namespace Test.Pages
 
         public void OnGet()
         {
+           
             if (HttpContext.Session.Keys.Contains("auth") || HttpContext.Request.Cookies.ContainsKey("auth"))
                 Response.Redirect("Profile");
         }
@@ -40,8 +41,9 @@ namespace Test.Pages
                 Message = "Пустое поле!";
             }
 
+            var hashPass = GetHashString(Password);
             if (PersonalInfoTable.AllEntities
-                .Where(inf => inf.Mail == Mail && inf.HashPassword == GetHashString(Password))
+                .Where(inf => inf.Mail == Mail && inf.HashPassword == hashPass)
                 .ToArray().Length == 0)
             {
                 Message = "Неверный логин или пароль!";
