@@ -30,10 +30,19 @@ namespace Test.Pages
         public void OnGet()
         {
             dishTable = new DishDAO();
+            bookmarkDao = new BookmarkDao();
             quick = dishTable.AllEntities.OrderByDescending(x => x.CookTime).Take(NumberInScrollItem).ToArray();
             moreNew = dishTable.AllEntities.OrderByDescending(x => x.CreatingDate).Take(NumberInScrollItem).ToArray();
-            var topDishesId = bookmarkDao.ConnectBookmarkDishClientId.GroupBy(x=>x)
-            //top = moreNew;
+            var topIds = bookmarkDao.ConnectBookmarkDishClientId
+                .GroupBy(x => x.FirstId)
+                .OrderByDescending(x => x.Count())
+                .Take(NumberInScrollItem)
+                .Select(x=> x.Key)
+                .ToArray();
+            for (var i = 0; i < topIds.Length; i++)
+            {
+                top[i] = dishTable.GetOneById(topIds[i]);
+            }
         }
 
         public void OnPost()
