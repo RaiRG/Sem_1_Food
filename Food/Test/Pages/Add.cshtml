@@ -8,10 +8,10 @@
 
     <br>
 
-    <form method="post" id="add">
+    <form method="post" id="add" enctype="multipart/form-data">
         <div class="addmarginleft">
             <label for="img" class="h6">Основное фото:</label> <br>
-            <input class="btn btn-success" type="file" name="img">
+            <input  class=" form-control" asp-for="InputFile" name = "inputfile" type="file"> @*class="form-control btn btn-success"*@
         </div>
 
         <br>

@@ -21,4 +21,10 @@
       <ProjectReference Include="..\DaoDatabase\DaoDatabase.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\img\food" />
+      <Folder Include="wwwroot\img\profilePhotos" />
+      <Folder Include="wwwroot\img\steps" />
+    </ItemGroup>
+
 </Project>

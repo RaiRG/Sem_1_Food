@@ -87,8 +87,6 @@
           <e p="Login.cshtml.cs" t="Include" />
           <e p="Logout.cshtml" t="Include" />
           <e p="Logout.cshtml.cs" t="Include" />
-          <e p="MyDishes.cshtml" t="Include" />
-          <e p="MyDishes.cshtml.cs" t="Include" />
           <e p="Privacy.cshtml" t="Include" />
           <e p="Privacy.cshtml.cs" t="Include" />
           <e p="Profile.cshtml" t="Include" />
@@ -118,11 +116,14 @@
             <e p="communication.png" t="Include" />
             <e p="date.png" t="Include" />
             <e p="default.png" t="Include" />
+            <e p="Food" t="Include" />
             <e p="invalid.png" t="Include" />
             <e p="owner.png" t="Include" />
             <e p="picca.jpg" t="Include" />
             <e p="portion.png" t="Include" />
+            <e p="profilePhotos" t="Include" />
             <e p="smartphone.png" t="Include" />
+            <e p="steps" t="Include" />
             <e p="timeclock.png" t="Include" />
             <e p="valid.png" t="Include" />
           </e>

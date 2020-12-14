@@ -1,5 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
+using System.Net;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -126,6 +128,9 @@ namespace Test.Pages
                     };
                     stepDao.Insert(step);
                 }
+
+                var file = InputFile;
+
             }
         }
 
@@ -171,5 +176,8 @@ namespace Test.Pages
         public string Img_3 { get; set; }
         [BindProperty]
         public string Img_4 { get; set; }
+        
+        [BindProperty]
+        public IFormFile InputFile { get; set; }
     }
 }
