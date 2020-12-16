@@ -11,55 +11,52 @@
     <form method="post" id="add" enctype="multipart/form-data">
         <div class="addmarginleft">
             <label for="img" class="h6">Основное фото:</label> <br>
-            <input  class=" form-control" asp-for="InputFile" name = "inputfile" type="file"> @*class="form-control btn btn-success"*@
+            <input  class="form-control" asp-for="InputFile" name= "inputfile" type="file"> @*class="form-control btn btn-success"*@
         </div>
 
         <br>
 
         <div class="addmarginleft">
             <label for="time" class="h6">Время приготовления :</label> <br>
-            <input class="form-control" type="time" name="time" style="background-color: #cedd81;">
+            <input class="form-control" asp-for="Time" name= "time" type="time" style="background-color: #cedd81;">
         </div>
 
         <div class="addmarginleft">
             <label for="addportion" class="h6">Кол-во порций :</label> <br>
-            <input class="form-control" type="number" name="addportion" style="background-color: #cedd81;">
+            <input class="form-control" asp-for="AddPortion" name= "addportion" type="number" style="background-color: #cedd81;">
         </div>
 
         <div class="addmarginleft">
             <label class="h6">Кухня :</label> <br>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" asp-for="IsTat">
+                <input class="form-check-input" type="checkbox" name = "istat" asp-for="IsTat">
                 <label for="isTat">Татарская</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" asp-for="IsRus">
+                <input class="form-check-input" type="checkbox" name = "isrus" asp-for="IsRus">
                 <label for="isTat">Русская</label>
             </div>
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" asp-for="IsItal">
+                <input class="form-check-input" type="checkbox" name = "isital" asp-for="IsItal">
                 <label for="isTat">Итальянская</label>
             </div>
         </div>
 
         <div class="addmarginleft">
             <label for="addname" class="h6">Название :</label> <br>
-            <input class="form-control" type="text" name="addname" style="background-color: #cedd81;">
+            <input class="form-control" type="text" asp-for="AddName" name = "addname" style="background-color: #cedd81;">
         </div>
 
         <br>
 
         <div class="addmarginleft">
             <h6>Описание :</h6>
-            <input class="form-control" type="text" name="Description" style=" background-color: #cedd81; width: 60%;height: 200px;">
+            <input class="form-control" type="text" name="description" asp-for="Description" style=" background-color: #cedd81; width: 60%;height: 200px;">
         </div>
-
         <br>
-
-
         <div id="Ingredients" class="addmarginleft">
             <h6>Продукты</h6>
-            <input class="form-control" type="text" name="ingridient_0" style="background-color: #cedd81; margin-bottom: 10px;"> <br>
+            <input class="form-control" type="text" name = "Ingridient_0" asp-for="Ingridient_0" style="background-color: #cedd81; margin-bottom: 10px;"> <br>
         </div>
 
         <div class="addmarginleft">
@@ -72,9 +69,9 @@
             <div>
                 <h3>Шаг</h3>
                 <label for="img" class="h6">Фото шага :</label> <br>
-                <input class="btn btn-success" type="file" name="img_0">
+                <input class="btn btn-success" name = "img_0" asp-for="Img_0" type="file">
                 <h6>Описание шага :</h6>
-                <input type="text" name="Description_0" class ="form-control"  style="width: 60%;height: 200px; background-color: #cedd81;">
+                <input type="text" name = "description_0" asp-for="Description_0" class ="form-control"  style="width: 60%;height: 200px; background-color: #cedd81;">
             </div>
         </div>
         <div class="addmarginleft">

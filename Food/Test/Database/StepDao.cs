@@ -75,7 +75,7 @@ namespace Test.Database
             valueis.Append(newEntity.DishID + ", ");
             valueis.Append(newEntity.NumberOfStep + ", ");
             valueis.Append("'" + newEntity.Description + "'" + ", ");
-            if (newEntity.Img == null)
+            if (newEntity.Img == null || newEntity.Img == "")
             {
                 newEntity.Img = "img/default.png";
             }

@@ -56,7 +56,7 @@ namespace Test.Database
                                         case "client_id":
                                             current.ClientID = (int) tableName;
                                             break;
-                                        case "send_time":
+                                        case "send_date_time":
                                             current.SendTime = (DateTime) tableName;
                                             break;
                                         case "description":
@@ -86,13 +86,12 @@ namespace Test.Database
             valueis.Append(newEntity.DishId + ", ");
             valueis.Append(newEntity.ClientID + ", ");
             valueis.Append("'" + newEntity.SendTime + "'" + ", ");
-            //valueis.Append("'" + newEntity.DateTime + "'" + ", ");
             valueis.Append("'" + newEntity.Description + "'");
             using (var connection = new NpgsqlConnection(connectionString)) // подключаемся к бд
             {
                 connection.Open();
                 var command = new NpgsqlCommand(
-                    "INSERT INTO reviews (id, dish_id, client_id, send_time, description) VALUES ( " +
+                    "INSERT INTO reviews (id, dish_id, client_id, send_date_time, description) VALUES ( " +
                     valueis + ")", connection);
                 command.ExecuteNonQuery();
             }

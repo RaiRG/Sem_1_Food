@@ -24,12 +24,12 @@ namespace Test.Pages
         public Dish[] quick = new Dish[NumberInScrollItem];
         
 
-        private DishDAO dishTable;
+        private DishDao dishTable;
         private BookmarkDao bookmarkDao;
 
         public void OnGet()
         {
-            dishTable = new DishDAO();
+            dishTable = new DishDao();
             bookmarkDao = new BookmarkDao();
             quick = dishTable.AllEntities.OrderByDescending(x => x.CookTime).Take(NumberInScrollItem).ToArray();
             moreNew = dishTable.AllEntities.OrderByDescending(x => x.CreatingDate).Take(NumberInScrollItem).ToArray();

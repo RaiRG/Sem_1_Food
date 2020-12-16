@@ -6,7 +6,7 @@ using Npgsql;
 
 namespace Test
 {
-    public class DishDAO : IDao<Dish, int>
+    public class DishDao : IDao<Dish, int>
     {
         //TODO: Внести country
         private string connectionString =
@@ -17,7 +17,7 @@ namespace Test
 
         private static bool isFirstLaunch = true;
 
-        public DishDAO()
+        public DishDao()
         {
             if (isFirstLaunch)
             {
@@ -97,7 +97,7 @@ namespace Test
             valueis.Append("'" + newEntity.CookTime.Hours + ":" + newEntity.CookTime.Minutes + "',"); 
             valueis.Append(newEntity.Portions + ", ");
             valueis.Append("'" + newEntity.CookingMethod + "'");
-            if (newEntity.Img == null)
+            if (newEntity.Img == null || newEntity.Img == "")
             {
                 newEntity.Img = "img/default.png";
             }
