@@ -1,0 +1,191 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Main";
+}
+
+<div class="container" style="margin-top: 40px;">
+    <h3>Самые новые</h3>
+</div>
+
+<div class="container">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    @for (int i = 0; i < 6; i++)
+                    {
+                        <div class="col-md-2" style="height: 150px;">
+                            <a asp-page="FoodPage" asp-route-id = "@Model.moreNew[i].Id">
+                                <img class="rounded border border-danger mainbllock" src="@Model.moreNew[i].Img">
+                            </a>
+                            <p class="text-center">pizza</p>
+                        </div>
+                    }
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    @for (int i = 6; i < 12; i++)
+                    {
+                        <div class="col-md-2" style="height: 150px;">
+                            <a asp-page="FoodPage" asp-route-id = "@Model.moreNew[i].Id">
+                                <img class="rounded border border-danger" style="width: 150px; height: 130px;" src="@Model.moreNew[i].Img">
+                            </a>
+                            <p class="text-center">pizza</p>
+                        </div>
+                    }
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    @for (int i = 12; i < 18; i++)
+                    {
+                        <div class="col-md-2" style="height: 150px;">
+                            <a asp-page="FoodPage" asp-route-id = "@Model.moreNew[i].Id">
+                                <img class="rounded border border-danger" style="width: 150px; height: 130px;" src="@Model.moreNew[i].Img">
+                            </a>
+                            <p class="text-center">pizza</p>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+        <!-- Элементы управления -->
+        <a class="carousel-control-prev" style="left: -100px;" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon cyrcle-buttin" aria-hidden="true"></span>
+            <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="carousel-control-next" style="right: -100px;" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon cyrcle-buttin" aria-hidden="true"></span>
+            <span class="sr-only">Следующий</span>
+        </a>
+    </div>
+</div>
+
+
+<div class="container" style="margin-top: 40px;">
+    <h3>Самые популярные</h3>
+</div>
+<div class="container">
+    <div id="carousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    @for (int i = 0; i < 6; i++)
+                    {
+                        <div class="col-md-2" style="height: 150px;">
+                            <a asp-page="FoodPage" asp-route-id ="@Model.top[i].Id">
+                                <img class="rounded border border-danger mainbllock" src="@Model.top[i].Img">
+                            </a>
+                            <p class="text-center">pizza</p>
+                        </div>
+                    }
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    @for (int i = 6; i < 12; i++)
+                    {
+                        <div class="col-md-2" style="height: 150px;">
+                            <a asp-page="FoodPage" asp-route-id ="@Model.top[i].Id">
+                                <img class="rounded border border-danger" style="width: 150px; height: 130px;" src="@Model.top[i].Img">
+                            </a>
+                            <p class="text-center">pizza</p>
+                        </div>
+                    }
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    @for (int i = 12; i < 18; i++)
+                    {
+                        <div class="col-md-2" style="height: 150px;">
+                            <a asp-page="FoodPage" asp-route-id ="@Model.top[i].Id">
+                                <img class="rounded border border-danger" style="width: 150px; height: 130px;" src="@Model.top[i].Img">
+                            </a>
+                            <p class="text-center">pizza</p>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+        <!-- Элементы управления -->
+        <a class="carousel-control-prev" style="left: -100px;" href="#carousel1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon cyrcle-buttin" aria-hidden="true"></span>
+            <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="carousel-control-next" style="right: -100px;" href="#carousel1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon cyrcle-buttin" aria-hidden="true"></span>
+            <span class="sr-only">Следующий</span>
+        </a>
+    </div>
+</div>
+
+<div class="container" style="margin-top: 40px;">
+    <h3>Быстрые блюда</h3>
+</div>
+
+<div class="container">
+    <div id="carousel2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    @for (int i = 0; i < 6; i++)
+                    {
+                        <div class="col-md-2" style="height: 150px;">
+                            <a asp-page="FoodPage" asp-route-id = "@Model.quick[i].Id">
+                                <img class="rounded border border-danger mainbllock" src="@Model.quick[i].Img">
+                            </a>
+                            <p class="text-center">pizza</p>
+                        </div>
+                    }
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    @for (int i = 6; i < 12; i++)
+                    {
+                        <div class="col-md-2" style="height: 150px;">
+                            <a asp-page="FoodPage" asp-route-id = "@Model.quick[i].Id">
+                                <img class="rounded border border-danger" style="width: 150px; height: 130px;" src="@Model.quick[i].Img">
+                            </a>
+                            <p class="text-center">pizza</p>
+                        </div>
+                    }
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    @for (int i = 12; i < 18; i++)
+                    {
+                        <div class="col-md-2" style="height: 150px;">
+                            <a asp-page="FoodPage" asp-route-id = "@Model.quick[i].Id">
+                                <img class="rounded border border-danger" style="width: 150px; height: 130px;" src="@Model.quick[i].Img">
+                            </a>
+                            <p class="text-center">pizza</p>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+        <!-- Элементы управления -->
+        <a class="carousel-control-prev" style="left: -100px;" href="#carousel2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon cyrcle-buttin" aria-hidden="true"></span>
+            <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="carousel-control-next" style="right: -100px;" href="#carousel2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon cyrcle-buttin" aria-hidden="true"></span>
+            <span class="sr-only">Следующий</span>
+        </a>
+    </div>
+</div>

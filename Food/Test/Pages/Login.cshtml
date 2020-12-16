@@ -1,0 +1,69 @@
+﻿@page
+@model Test.Pages.Login
+@{
+    ViewData["Title"] = "Login";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-3  rounded border" style="background-color: #cedd81; margin-top: 20px;">
+            <div class="row">
+                <form method="post">
+                    <div class="col-md-12 offset-md-3">
+                        <h3 style="margin-bottom: 15px;">Вход</h3>
+                    </div>
+
+                    <div class="col-md-12 offset-md-3">
+                        <label for="mail">Почта</label>
+                        <input class="form-control mr-sm-2 inputH" name="mail">
+                    </div>
+                    <div class="col-md-3"></div>
+
+                    <div class="col-md-12 offset-md-3">
+                        <label for="password">Пароль</label>
+                        <input type="password" class="form-control mr-sm-2 inputH" name="password">
+                    </div>
+
+                    <div class="col-md-12 offset-md-3">
+                        <input asp-for="isRemember" name="isRemember" type="checkbox">
+                        <label for="isRemember">Запомнить меня</label>
+
+                    </div>
+
+                    <br>
+
+                    <div class="col-md-9 offset-md-3 text-right">
+                        <button type="submit" class="btn btn-danger" style="width: 100%;">Вход</button>
+                    </div>
+                    @if (!Model.isCorrectInputInfo)
+                    {
+                        <div class="col-md-12 offset-md-3">
+                            <p>@Model.Message</p>
+                        </div>
+                    }
+
+                    <br>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-2" style="margin-top: 25px;">
+            <a asp-page="Registr">
+                <button type="button" class="btn btn-danger" style="width: 150px;">Регистрация</button>
+            </a>
+            <a asp-page="Login">
+                <button type="button" class="btn btn-danger" style="width: 150px; margin-top: 5px;">Вход</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+@* @//TODO: Удалить ненужное, если Вова не изменит *@
+@* <!-- Модальное окно --> *@
+@* <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> *@
+@*     <div class="modal-dialog" role="document"> *@
+@*         <div class="modal-content"> *@
+@*             <div class="modal-header"> *@
+@*                 <h4 class="modal-title" id="myModalLabel">Неверный логин или пароль</h4> *@
+@*             </div>       *@
+@*         </div> *@
+@*     </div> *@
+@* </div> *@

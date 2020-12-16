@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Railina\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Railina\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Food.1852115192.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Railina\GitHub\Sem_1_Food\Food" t="IncludeFlat">
+      <e p="Food.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Test" t="IncludeRecursive">
+        <e p="app.db" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="Areas" t="Include">
+          <e p="Identity" t="Include">
+            <e p="Pages" t="Include">
+              <e p="_ViewStart.cshtml" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Data" t="Include">
+          <e p="ApplicationDbContext.cs" t="Include" />
+          <e p="Migrations" t="Include">
+            <e p="00000000000000_CreateIdentitySchema.cs" t="Include" />
+            <e p="00000000000000_CreateIdentitySchema.Designer.cs" t="Include" />
+            <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Database" t="Include">
+          <e p="BookmarkDao.cs" t="Include" />
+          <e p="ClientDao.cs" t="Include" />
+          <e p="CounrtyKitchenDao.cs" t="Include" />
+          <e p="Dish_ClientDao.cs" t="Include" />
+          <e p="Dish_KitchenDao.cs" t="Include" />
+          <e p="Dish_ProductDao.cs" t="Include" />
+          <e p="DishDAO.cs" t="Include" />
+          <e p="Entity.cs" t="Include" />
+          <e p="IConnactionOneToOne.cs" t="Include" />
+          <e p="IConnectionManyToManyDao.cs" t="Include" />
+          <e p="IDao.cs" t="Include" />
+          <e p="KitchenDao.cs" t="Include" />
+          <e p="PersonalInfoDao.cs" t="Include" />
+          <e p="ProductDAO.cs" t="Include" />
+          <e p="ReviewDao.cs" t="Include" />
+          <e p="StepDao.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Client.cs" t="Include" />
+          <e p="Dish.cs" t="Include" />
+          <e p="FirstSecondItem.cs" t="Include" />
+          <e p="Kitchen.cs" t="Include" />
+          <e p="PersonalInfo.cs" t="Include" />
+          <e p="Product.cs" t="Include" />
+          <e p="Review.cs" t="Include" />
+          <e p="Step.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Test.AssemblyInfo.cs" t="Include" />
+              <e p="Test.RazorAssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Pages" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Add.cshtml" t="Include" />
+          <e p="Add.cshtml.cs" t="Include" />
+          <e p="AddToBookmarks.cshtml" t="Include" />
+          <e p="AddToBookmarks.cshtml.cs" t="Include" />
+          <e p="AdminPage.cshtml" t="Include" />
+          <e p="AdminPage.cshtml.cs" t="Include" />
+          <e p="Contacts.cshtml" t="Include" />
+          <e p="Contacts.cshtml.cs" t="Include" />
+          <e p="Error.cshtml" t="Include" />
+          <e p="Error.cshtml.cs" t="Include" />
+          <e p="FoodPage.cshtml" t="Include" />
+          <e p="FoodPage.cshtml.cs" t="Include" />
+          <e p="Forum.cshtml" t="Include" />
+          <e p="Forum.cshtml.cs" t="Include" />
+          <e p="Index.cshtml" t="Include" />
+          <e p="Index.cshtml.cs" t="Include" />
+          <e p="Kitchen.cshtml" t="Include" />
+          <e p="Kitchen.cshtml.cs" t="Include" />
+          <e p="Login.cshtml" t="Include" />
+          <e p="Login.cshtml.cs" t="Include" />
+          <e p="Logout.cshtml" t="Include" />
+          <e p="Logout.cshtml.cs" t="Include" />
+          <e p="Privacy.cshtml" t="Include" />
+          <e p="Privacy.cshtml.cs" t="Include" />
+          <e p="Profile.cshtml" t="Include" />
+          <e p="Profile.cshtml.cs" t="Include" />
+          <e p="Registr.cshtml" t="Include" />
+          <e p="Registr.cshtml.cs" t="Include" />
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_LoginPartial.cshtml" t="Include" />
+            <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="Test.csproj" t="IncludeRecursive" />
+        <e p="wwwroot" t="Include">
+          <e p="css" t="Include">
+            <e p="site.css" t="Include" />
+            <e p="style.css" t="Include" />
+          </e>
+          <e p="favicon.ico" t="Include" />
+          <e p="img" t="Include">
+            <e p="call.png" t="Include" />
+            <e p="communication.png" t="Include" />
+            <e p="date.png" t="Include" />
+            <e p="default.png" t="Include" />
+            <e p="Food" t="Include" />
+            <e p="invalid.png" t="Include" />
+            <e p="owner.png" t="Include" />
+            <e p="picca.jpg" t="Include" />
+            <e p="portion.png" t="Include" />
+            <e p="profilePhotos" t="Include" />
+            <e p="smartphone.png" t="Include" />
+            <e p="steps" t="Include" />
+            <e p="timeclock.png" t="Include" />
+            <e p="valid.png" t="Include" />
+          </e>
+          <e p="js" t="Include">
+            <e p="jquery-3.5.1.min.js" t="Include" />
+            <e p="script.js" t="Include" />
+          </e>
+          <e p="lib" t="Include">
+            <e p="bootstrap" t="Include">
+              <e p="dist" t="Include">
+                <e p="css" t="Include">
+                  <e p="bootstrap-grid.css" t="Include" />
+                  <e p="bootstrap-grid.css.map" t="Include" />
+                  <e p="bootstrap-grid.min.css" t="Include" />
+                  <e p="bootstrap-grid.min.css.map" t="Include" />
+                  <e p="bootstrap-reboot.css" t="Include" />
+                  <e p="bootstrap-reboot.css.map" t="Include" />
+                  <e p="bootstrap-reboot.min.css" t="Include" />
+                  <e p="bootstrap-reboot.min.css.map" t="Include" />
+                  <e p="bootstrap.css" t="Include" />
+                  <e p="bootstrap.css.map" t="Include" />
+                  <e p="bootstrap.min.css" t="Include" />
+                  <e p="bootstrap.min.css.map" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="bootstrap.bundle.js" t="Include" />
+                  <e p="bootstrap.bundle.js.map" t="Include" />
+                  <e p="bootstrap.bundle.min.js" t="Include" />
+                  <e p="bootstrap.bundle.min.js.map" t="Include" />
+                  <e p="bootstrap.js" t="Include" />
+                  <e p="bootstrap.js.map" t="Include" />
+                  <e p="bootstrap.min.js" t="Include" />
+                  <e p="bootstrap.min.js.map" t="Include" />
+                </e>
+              </e>
+              <e p="LICENSE" t="Include" />
+            </e>
+            <e p="jquery" t="Include">
+              <e p="dist" t="Include">
+                <e p="jquery.js" t="Include" />
+                <e p="jquery.min.js" t="Include" />
+                <e p="jquery.min.map" t="Include" />
+              </e>
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+            <e p="jquery-validation" t="Include">
+              <e p="dist" t="Include">
+                <e p="additional-methods.js" t="Include" />
+                <e p="additional-methods.min.js" t="Include" />
+                <e p="jquery.validate.js" t="Include" />
+                <e p="jquery.validate.min.js" t="Include" />
+              </e>
+              <e p="LICENSE.md" t="Include" />
+            </e>
+            <e p="jquery-validation-unobtrusive" t="Include">
+              <e p="jquery.validate.unobtrusive.js" t="Include" />
+              <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+    </e>
+  </component>
+</project>

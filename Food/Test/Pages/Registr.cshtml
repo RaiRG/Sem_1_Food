@@ -1,0 +1,118 @@
+﻿@page
+@model Test.Pages.Registr
+@{
+    ViewData["Title"] = "Registration";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-3  rounded border" style="background-color: #cedd81; margin-top: 20px;">
+            <div class="row">
+                <form method="post" name="text">
+                    <div class="col-md-12 offset-md-3">
+                        <h3 style="margin-bottom: 15px;">Регистрация</h3>
+                    </div>
+
+                    <div class="col-md-12 offset-md-3">
+                        <label for="name">Имя</label>
+                        <input class="form-control mr-sm-2 inputH" name="name">
+                    </div>
+                    <div class="col-md-3"></div>
+
+                    <div class="col-md-12 offset-md-3">
+                        <label for="surname">Фамилия</label>
+                        <input class="form-control mr-sm-2 inputH" name="surname">
+                    </div>
+                    <div class="col-md-3"></div>
+
+                    <div class="col-md-12 offset-md-3">
+                        <label for="login">Псевдоним</label>
+                        <input class="form-control mr-sm-2 inputH" name="login">
+                    </div>
+
+                    <div class="col-md-12 offset-md-3">
+                        <label for="password">Пароль</label>
+                        <input id="pswd" type="password" class="form-control mr-sm-2 inputH" name="password">
+                    </div>
+                    <div class="col-md-3"></div>
+
+                    <div class="col-md-12 offset-md-3">
+                        <label for="repeat">Повторить</label>
+                        <input type="password" class="form-control mr-sm-2 inputH" name="repeat">
+                    </div>
+                    <div class="col-md-3"></div>
+
+                    <div class="col-md-12 offset-md-3">
+                        <label for="email">Почта</label>
+                        <input class="form-control mr-sm-2 inputH" name="email">
+                    </div>
+                    <br>
+
+                    <div class="col-md-12 offset-md-3" id="password_info">
+                        <p>Критерии пароля:</p>
+                        <ul>
+                            <li id="length">
+                                <strong>> 8 символов</strong>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <br>
+
+                    <div class="col-md-9 offset-md-3 text-right">
+                        <button type="submit" class="btn btn-danger" style="width: 100%;">Регистрация</button>
+                    </div>
+                    <div class="col-md-12 offset-md-3 text-right">
+                        <p>@Model.Message</p>
+                    </div>
+
+                    <br>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-2" style="margin-top: 25px;">
+            <a asp-page="Registr">
+                <button type="button" class="btn btn-danger" style="width: 150px;">Регистрация</button>
+            </a>
+            <a asp-page="Login">
+                <button type="button" class="btn btn-danger" style="width: 150px; margin-top: 5px;">Вход</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+@*//TODO: Удалить закомментир-ое если Вова не изменит
+
+<!-- Модальное окно -->
+<div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Пользователь с такой почтой уже зарегистрирован</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@* <!-- Модальное окно --> *@
+@* <div class="modal fade" id="password" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> *@
+@*     <div class="modal-dialog" role="document"> *@
+@*         <div class="modal-content"> *@
+@*             <div class="modal-header"> *@
+@*                 <h4 class="modal-title" id="myModalLabel">Неверный формат пароля : пароль должен содержать минимум 8 знаков</h4> *@
+@*             </div> *@
+@*         </div> *@
+@*     </div> *@
+@* </div> *@
+@* *@
+@* <!-- это кнопки для запуска модальных окон, это для сервера, после проверки с его стороны --> *@
+@* @if (!Model.isNewMail) *@
+@* { *@
+@*     <a class="dropdown-item" data-toggle="modal" data-target="#email" href="#"></a> *@
+@* } *@
+@* @if (!Model.isCorrectPassword) *@
+@* { *@
+@*     <a class="dropdown-item" data-toggle="modal" data-target="#password" href="#"></a> *@
+@* } *@

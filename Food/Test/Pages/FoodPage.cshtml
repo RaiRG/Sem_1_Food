@@ -1,0 +1,116 @@
+﻿@page
+@using System.Diagnostics.Eventing.Reader
+@model Test.Pages.FoodPage
+<!-- content -->
+<div class="container" style="margin-top: 15px;">
+    <div class="row">
+        <div class="h3 col-md-12 margin-bottom">@Model.Dish.Name</div>
+        <div class="col-md-3">
+            <div class="media-block">
+                <div class="media-block-img">
+                    <img src="@Model.Dish.Img" class="news-card-img">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            @if (!@Model.isAddedToBookmarks)
+            {
+                <div class="col-md-4 profilinfo">
+                    <button style="background-color: #cedd81" class="btn btn-outline my-2 my-sm-0" type="submit">
+                        <a asp-page="AddToBookmarks" asp-route-dishId="@Model.Dish.Id" style="color: black">Добавить в закладки</a>
+                    </button>
+                </div>
+            }
+            else
+            {
+                <div class="col-md-4 profilinfo">
+                    <div class="p" style="margin-bottom: 15px;">В закладках</div>
+                </div>
+            }
+            <div class="foodinfo">
+                <div class="margin-bottom">
+                    <img src="img/timeclock.png" class="foodinfo_img">@Model.Dish.CookTime
+                </div>
+                <div class="margin-bottom"><img src="img/portion.png" class="foodinfo_img">@Model.Dish.Portions порций</div>
+                <div class="margin-bottom">
+                    <img src="img/owner.png" class="foodinfo_img">@Model.ClientName
+                </div>
+                <div class="margin-bottom">
+                    <img src="img/date.png" class="foodinfo_img"> @Model.Dish.CreatingDate.Date
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 h3">Описание</div>
+        <div class="col-md-12">
+            <div class="p" style="margin-bottom: 15px;">@Model.Dish.CookingMethod</div>
+        </div>
+        <div class="col-md-12 menucalor foodinfo">
+            <div class="h3 text-danger">Продукты</div>
+            @for (int i = 0; i < @Model.Products.Length; i++)
+            {
+                @if (i % 2 == 1)
+                {
+                    <div class="p wightcolor">@Model.Products[i].Name - @Model.Weights[i] г.</div>
+                }
+                @if (i % 2 == 0)
+                {
+                    <div class="p">@Model.Products[i].Name - @Model.Weights[i] г.</div>
+                }
+            }
+            <br>
+        </div>
+        <div class="col-md-12 foodinfo" style="margin-top: 15px;">
+            <div class="h4">Пошаговый фото рецепт</div>
+            <hr>
+            @for (int i = 0; i < @Model.Steps.Length; i++)
+            {
+                <div class="row">
+                    <div class="col-md-3 offset-md-2">
+                        <div class="media-block">
+                            <div class="media-block-img">
+                                <img src="@Model.Steps[i].Img" class="news-card-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="h6">@(i + 1) шаг</div>
+                        <div class="p">@Model.Steps[i].Description</div>
+                    </div>
+                </div>
+                <hr>
+            }
+        </div>
+
+        <div class="col-md-12 h3 text-center" style="margin-top: 25px;">
+            Отзывы и комментарии
+        </div>
+
+        <div class="col-md-12 foodinfo">
+            @for (int i = 0; i < @Model.Reviews.Length; i++)
+            {
+                <div class="col-md-6 offset-md-3" style="margin-bottom: 25px;">
+                    <div class="row border border-danger">
+                        <div class="col-md-11 offset-md-1 h4">
+                            <img src="@Model.AuthorsOfReview[i].Img" class="comm_img rounded-circle border border-danger">@Model.AuthorsOfReview[i].Name @Model.AuthorsOfReview[i].Surname
+                        </div>
+                        <div class="p col-md-11">@Model.Reviews[i].SendTime</div>
+                        <div class="col-md-11">@Model.Reviews[i].Description</div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="col-md-12 foodinfo">
+            <div class="col-md-6 offset-md-3" style="margin-top: 25px;">
+                <form method="post">
+                     <input class="form-control inputH" asp-for="Description" style="width: 100%;height: 80px;"> <br>
+                    <button type="submit" class="btn btn-danger" style="width: 100%;">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
