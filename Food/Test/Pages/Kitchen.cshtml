@@ -11,7 +11,7 @@
                 <a asp-page="FoodPage" asp-route-id="@Model.Dishes[i].Id">
                     <img class="img-1 rounded-circle border border-danger" src="@Model.Dishes[i].Img">
                 </a>
-                <h4 class="text-center"></h4>
+                <h4 class="text-center">@Model.Dishes[i].Name</h4>
                 <p class="over">
                     <small>@Model.Dishes[i].CookingMethod</small>
                 </p>

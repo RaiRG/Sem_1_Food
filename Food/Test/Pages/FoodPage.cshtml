@@ -13,19 +13,22 @@
             </div>
         </div>
         <div class="col-md-9">
-            @if (!@Model.isAddedToBookmarks)
+            @if (@Model.isAuthClient)
             {
-                <div class="col-md-4 profilinfo">
-                    <button style="background-color: #cedd81" class="btn btn-outline my-2 my-sm-0" type="submit">
-                        <a asp-page="AddToBookmarks" asp-route-dishId="@Model.Dish.Id" style="color: black">Добавить в закладки</a>
-                    </button>
-                </div>
-            }
-            else
-            {
-                <div class="col-md-4 profilinfo">
-                    <div class="p" style="margin-bottom: 15px;">В закладках</div>
-                </div>
+                @if (!@Model.isAddedToBookmarks)
+                {
+                    <div class="col-md-4 profilinfo">
+                        <button style="background-color: #cedd81" class="btn btn-outline my-2 my-sm-0" type="submit">
+                            <a asp-page="AddToBookmarks" asp-route-dishId="@Model.Dish.Id" style="color: black">Добавить в закладки</a>
+                        </button>
+                    </div>
+                }
+                else
+                {
+                    <div class="col-md-4 profilinfo">
+                        <div class="p" style="margin-bottom: 15px;">В закладках</div>
+                    </div>
+                }
             }
             <div class="foodinfo">
                 <div class="margin-bottom">

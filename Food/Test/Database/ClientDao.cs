@@ -12,7 +12,6 @@ namespace Test
         private static readonly string connectionString =
             @"Server=127.0.0.1;Port=5432;Database=Test;User Id=postgres;Password=postgres;";
 
-
         private static bool isFirstLaunch = true;
 
         private static readonly Dictionary<int, Client> dictionaryOfEntities = new Dictionary<int, Client>();
@@ -56,14 +55,8 @@ namespace Test
                                         case "id":
                                             current.Id = (int) tableName;
                                             break;
-                                        case "numberofdishes":
-                                            current.NumberOfDishes = (int) tableName;
-                                            break;
                                         case "login":
                                             current.Login = tableName.ToString();
-                                            break;
-                                        case "rating":
-                                            current.Rating = (int) tableName;
                                             break;
                                         case "img":
                                             current.Img = (string) tableName;
@@ -71,6 +64,7 @@ namespace Test
                                     }
                                 }
                             }
+
                             allEntities.Add(current);
                             dictionaryOfEntities.Add(current.Id, current);
                         }
@@ -91,18 +85,17 @@ namespace Test
             valueis.Append("'" + newEntity.Name + "'" + ", ");
             valueis.Append("'" + newEntity.Surname + "'" + ", ");
             valueis.Append("'" + newEntity.Login + "'" + ", ");
-            valueis.Append(newEntity.Rating + ", ");
-            valueis.Append(newEntity.NumberOfDishes + " ");
             if (newEntity.Img == null)
             {
                 newEntity.Img = "img/default.png";
             }
+
             valueis.Append(", '" + newEntity.Img + "'");
             using (var connection = new NpgsqlConnection(connectionString)) // подключаемся к бд
             {
                 connection.Open();
                 var command = new NpgsqlCommand(
-                    "INSERT INTO clients (id, name, surname, login, rating, numberOfDishes, img) VALUES ( " +
+                    "INSERT INTO clients (id, name, surname, login,  img) VALUES ( " +
                     valueis + ")", connection);
                 command.ExecuteNonQuery();
             }
@@ -139,6 +132,39 @@ namespace Test
             }
         }
 
+        public void Update(int id, string img)
+        {
+            allEntities = allEntities
+                .Select(x =>
+                {
+                    if (x.Id == id)
+                    {
+                        x.Img = img;
+                    }
+
+                    return x;
+                }).ToList();
+            var old = GetOneById(id);
+            dictionaryOfEntities[id] = new Client()
+            {
+                Name = old.Name,
+                Surname = old.Surname,
+                Login = old.Login,
+                Id = id,
+                Img = img ?? old.Img
+            };
+            using (var connection = new NpgsqlConnection(connectionString)) // подключаемся к бд
+            {
+                connection.Open();
+                if (img != null)
+                {
+                    var command = new NpgsqlCommand(
+                        "UPDATE clients SET img = " + "'" + img + "'" + "  WHERE id = " + id, connection);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
         public void Update(int id, string name, string surname, string login)
         {
             allEntities = allEntities
@@ -157,14 +183,11 @@ namespace Test
             var old = GetOneById(id);
             dictionaryOfEntities[id] = new Client()
             {
-                Name = name?? old.Name,
-                Surname = surname?? old.Surname,
-                Login = login?? old.Login,
+                Name = name ?? old.Name,
+                Surname = surname ?? old.Surname,
+                Login = login ?? old.Login,
                 Id = id,
-                Img = old.Img,
-                Rating = old.Rating,
-                NumberOfDishes = old.NumberOfDishes
-                
+                Img = old.Img
             };
             using (var connection = new NpgsqlConnection(connectionString)) // подключаемся к бд
             {
@@ -172,15 +195,17 @@ namespace Test
                 if (name != null)
                 {
                     var command = new NpgsqlCommand(
-                        "UPDATE clients SET name = " + "'" + name +  "'" +"  WHERE id = " + id, connection);
+                        "UPDATE clients SET name = " + "'" + name + "'" + "  WHERE id = " + id, connection);
                     command.ExecuteNonQuery();
                 }
+
                 if (surname != null)
                 {
                     var command = new NpgsqlCommand(
                         "UPDATE clients SET surname = " + "'" + surname + "'" + "  WHERE id = " + id, connection);
                     command.ExecuteNonQuery();
                 }
+
                 if (login != null)
                 {
                     var command = new NpgsqlCommand(

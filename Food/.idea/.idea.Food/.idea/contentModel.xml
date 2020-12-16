@@ -35,6 +35,7 @@
           <e p="Dish_ProductDao.cs" t="Include" />
           <e p="DishDAO.cs" t="Include" />
           <e p="Entity.cs" t="Include" />
+          <e p="ForumDao.cs" t="Include" />
           <e p="IConnactionOneToOne.cs" t="Include" />
           <e p="IConnectionManyToManyDao.cs" t="Include" />
           <e p="IDao.cs" t="Include" />
@@ -44,10 +45,12 @@
           <e p="ReviewDao.cs" t="Include" />
           <e p="StepDao.cs" t="Include" />
         </e>
+        <e p="FileHandler.cs" t="Include" />
         <e p="Models" t="Include">
           <e p="Client.cs" t="Include" />
           <e p="Dish.cs" t="Include" />
           <e p="FirstSecondItem.cs" t="Include" />
+          <e p="ForumItem.cs" t="Include" />
           <e p="Kitchen.cs" t="Include" />
           <e p="PersonalInfo.cs" t="Include" />
           <e p="Product.cs" t="Include" />
@@ -75,6 +78,8 @@
           <e p="Contacts.cshtml.cs" t="Include" />
           <e p="Error.cshtml" t="Include" />
           <e p="Error.cshtml.cs" t="Include" />
+          <e p="FindingKithen.cshtml" t="Include" />
+          <e p="FindingKithen.cshtml.cs" t="Include" />
           <e p="FoodPage.cshtml" t="Include" />
           <e p="FoodPage.cshtml.cs" t="Include" />
           <e p="Forum.cshtml" t="Include" />
@@ -93,6 +98,8 @@
           <e p="Profile.cshtml.cs" t="Include" />
           <e p="Registr.cshtml" t="Include" />
           <e p="Registr.cshtml.cs" t="Include" />
+          <e p="Search.cshtml" t="Include" />
+          <e p="Search.cshtml.cs" t="Include" />
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
             <e p="_LoginPartial.cshtml" t="Include" />
@@ -116,14 +123,82 @@
             <e p="communication.png" t="Include" />
             <e p="date.png" t="Include" />
             <e p="default.png" t="Include" />
-            <e p="Food" t="Include" />
+            <e p="Food" t="Include">
+              <e p="202012152220351528.jpg" t="Include" />
+              <e p="2020121522245661.jpg" t="Include" />
+              <e p="202012152225507468.jpg" t="Include" />
+              <e p="20201215224381425.jpg" t="Include" />
+              <e p="20201215224585125.jpg" t="Include" />
+              <e p="20201215229269698.jpg" t="Include" />
+              <e p="202012152313399678.jpg" t="Include" />
+              <e p="20201215232536728.jpg" t="Include" />
+              <e p="2020121523623638.jpg" t="Include" />
+              <e p="20201215239257148.jpg" t="Include" />
+              <e p="20201216051553148.jpg" t="Include" />
+              <e p="20201216056552001.jfif" t="Include" />
+              <e p="2020121611313775Без названия.jfif" t="Include" />
+              <e p="2020121611453366content_658e095df63555e26dc8ca86ffd0b9e0.jpg" t="Include" />
+              <e p="2020121611482721.jpg" t="Include" />
+              <e p="2020121611629525Без названия.jfif" t="Include" />
+              <e p="2020121611817717images (2).jfif" t="Include" />
+              <e p="202012161196550images (3).jfif" t="Include" />
+              <e p="2020121612525837images (1).jfif" t="Include" />
+              <e p="2020121612631283images (5).jfif" t="Include" />
+              <e p="2020121612640473images (2).jfif" t="Include" />
+              <e p="202012161265935images (2).jfif" t="Include" />
+              <e p="202012161314143081.jfif" t="Include" />
+              <e p="202012161327156221.jfif" t="Include" />
+              <e p="202012161345327781.jfif" t="Include" />
+              <e p="202012161420708275_0124sau_1089_6hi.jpg" t="Include" />
+              <e p="2020121614247184images (3).jfif" t="Include" />
+              <e p="2020121615246924images (3).jfif" t="Include" />
+              <e p="202012161571242images (3).jfif" t="Include" />
+              <e p="202012161920781sm_249390.jpg" t="Include" />
+              <e p="202012162330479images (3).jfif" t="Include" />
+            </e>
             <e p="invalid.png" t="Include" />
             <e p="owner.png" t="Include" />
             <e p="picca.jpg" t="Include" />
             <e p="portion.png" t="Include" />
-            <e p="profilePhotos" t="Include" />
+            <e p="profilePhotos" t="Include">
+              <e p="20201216131222463Без названия.jfif" t="Include" />
+              <e p="20201216134840117unnamed.jpg" t="Include" />
+              <e p="202012162033561Без названия.jfif" t="Include" />
+            </e>
             <e p="smartphone.png" t="Include" />
-            <e p="steps" t="Include" />
+            <e p="steps" t="Include">
+              <e p="20201215232537501.jpg" t="Include" />
+              <e p="2020121523624271.jpg" t="Include" />
+              <e p="20201216051553481.jpg" t="Include" />
+              <e p="20201216051553582.jpg" t="Include" />
+              <e p="20201216051553583.jpg" t="Include" />
+              <e p="20201216051553594.jpg" t="Include" />
+              <e p="20201216056552671.jpg" t="Include" />
+              <e p="20201216056552692.jpg" t="Include" />
+              <e p="2020121611313837Без названия (1).jfif" t="Include" />
+              <e p="2020121611313846content_658e095df63555e26dc8ca86ffd0b9e0.jpg" t="Include" />
+              <e p="2020121611453371iStock-694189032.jpg" t="Include" />
+              <e p="2020121611483013.jpg" t="Include" />
+              <e p="2020121611483034.jpg" t="Include" />
+              <e p="2020121611629530iStock-694189032.jpg" t="Include" />
+              <e p="2020121611629531Без названия (2).jfif" t="Include" />
+              <e p="2020121611817782images (4).jfif" t="Include" />
+              <e p="202012161196560images (3).jfif" t="Include" />
+              <e p="2020121612631288images.jfif" t="Include" />
+              <e p="2020121612631289images (4).jfif" t="Include" />
+              <e p="202012161265941images (1).jfif" t="Include" />
+              <e p="202012161316307171.jfif" t="Include" />
+              <e p="202012161328123221.jfif" t="Include" />
+              <e p="202012161328225961.jfif" t="Include" />
+              <e p="202012161345328031.jfif" t="Include" />
+              <e p="202012161345328051.jfif" t="Include" />
+              <e p="2020121614247217images (1).jfif" t="Include" />
+              <e p="2020121615246952images (4).jfif" t="Include" />
+              <e p="202012161571247images (4).jfif" t="Include" />
+              <e p="202012161712955sm_254437.jpg" t="Include" />
+              <e p="202012161712957sm_254379.jpg" t="Include" />
+              <e p="202012162330490images (3).jfif" t="Include" />
+            </e>
             <e p="timeclock.png" t="Include" />
             <e p="valid.png" t="Include" />
           </e>

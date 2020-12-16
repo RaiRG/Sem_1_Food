@@ -55,6 +55,7 @@ namespace Test
             
             app.UseStaticFiles();
             app.UseRouting();
+            FileHandler.WebRoot = env.WebRootPath;
             app.UseEndpoints(endpoints => { endpoints.MapRazorPages(); });
         }
     }

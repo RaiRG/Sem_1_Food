@@ -3,6 +3,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -18,14 +19,15 @@ namespace Test.Pages
         public string Password { get; set; }
 
         [BindProperty(SupportsGet = false)]
+        public string Repeat { get; set; }
+
+        [BindProperty(SupportsGet = false)]
         public string Email { get; set; }
 
         public string Message { get; set; }
 
-        private bool isNewMail = true;
-        private bool isCorrectPassword = true;
-        private ClientDao ClientTable;
-        private PersonalInfoDao PersonalInfoTable;
+        private ClientDao ClientTable = new ClientDao();
+        private PersonalInfoDao PersonalInfoTable = new PersonalInfoDao();
 
         public void OnGet()
         {
@@ -33,30 +35,14 @@ namespace Test.Pages
 
         public void OnPost()
         {
-            ClientTable = new ClientDao();
-            PersonalInfoTable = new PersonalInfoDao();
-            if (PersonalInfoTable.AllEntities.Where(cl => cl.Mail == Email).ToArray().Length != 0)
-            {
-                isNewMail = false;
-                Message = "Пользователь с такой почтой уже зарегистрирован!";
-            }
-
-            if (Password == null || Password.Length < 8)
-            {
-                isCorrectPassword = false;
-                Message = "Пароль должен быть длиннее!";
-            }
-
-            if (isNewMail && isCorrectPassword)
+            if (ValidateData())
             {
                 var client = new Client()
                 {
                     Id = ClientDao.ID,
                     Login = RegistrClient.Login,
                     Name = RegistrClient.Name,
-                    Surname = RegistrClient.Surname,
-                    NumberOfDishes = 0,
-                    Rating = 0
+                    Surname = RegistrClient.Surname
                 };
                 ClientTable.Insert(client);
                 var info = new PersonalInfo()
@@ -68,6 +54,44 @@ namespace Test.Pages
                 PersonalInfoTable.Insert(info);
                 Message = "Вы успешно зарегистрированы!";
             }
+        }
+
+        private bool ValidateData()
+        {
+            if (PersonalInfoTable.AllEntities.Where(cl => cl.Mail == Email).ToArray().Length != 0)
+            {
+               Message = "Пользователь с такой почтой уже зарегистрирован!";
+               return false;
+            }
+
+            if (Password == null || Password.Length < 8)
+            {
+                Message = "Пароль должен быть длиннее!";
+                return false;
+            }
+
+            if (Password != Repeat)
+            {
+                Message = "Пароли не совпадают!";
+                return false;
+            }
+
+            var reg =new Regex(@"[A-Za-z]+[\.A-Za-z0-9_-]*[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]+");
+            if (!reg.IsMatch(Email))
+            {
+                Message = "Неверный формат почты!";
+                return false;
+            }
+
+            var nameAndSurnamePattern = new Regex("[A-Za-zА-Яа-яЁё]+");
+            if (!(nameAndSurnamePattern.IsMatch(RegistrClient.Name) || nameAndSurnamePattern.IsMatch(RegistrClient.Name)))
+            {
+                var y = nameAndSurnamePattern.IsMatch(RegistrClient.Surname);
+                Message = "Неверный формат имени или фамилии! Используйте только русские буквы";
+                return false;
+            }
+
+            return true;
         }
 
         string GetHashPassword(string password)
