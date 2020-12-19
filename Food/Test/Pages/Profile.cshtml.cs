@@ -14,6 +14,7 @@ namespace Test.Pages
         public PersonalInfo PersonalInfo;
         public int NumberOfDishes { get; set; }
         public int Rating { get; set; }
+        public bool isCanShowContent { get; set; }
 
         private ClientDao clientTable = new ClientDao();
         private PersonalInfoDao personalInfoDao = new PersonalInfoDao();
@@ -24,6 +25,7 @@ namespace Test.Pages
             string id;
             if (HttpContext.Session.Keys.Contains("auth"))
             {
+                isCanShowContent = true;
                 id = HttpContext.Session.GetString("auth");
                 Client = clientTable.GetOneById(int.Parse(id));
                 PersonalInfo = personalInfoDao.GetOneById(int.Parse(id));
@@ -34,6 +36,7 @@ namespace Test.Pages
             }
             else if (HttpContext.Request.Cookies.ContainsKey("auth"))
             {
+                isCanShowContent = true;
                 id = HttpContext.Request.Cookies["auth"];
                 HttpContext.Session.SetString("auth", id);
                 Client = clientTable.GetOneById(int.Parse(id));
@@ -45,6 +48,7 @@ namespace Test.Pages
             }
             else
             {
+                isCanShowContent = false;
                 Response.Redirect("Login");
             }
         }
