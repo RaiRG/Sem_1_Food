@@ -49,7 +49,7 @@ namespace Test.Pages
             }
         }
 
-        public void OnPost()
+      public void OnPost()
         {
             if (IsItal || IsRus || IsTat)
             {
@@ -72,95 +72,115 @@ namespace Test.Pages
                     Img = pathToInputFile
                 };
                 dishDao.Insert(addDish);
-                if (HttpContext.Session.Keys.Contains("auth"))
-                {
-                    clientId = int.Parse(HttpContext.Session.GetString("auth"));
-                }
-                else
-                {
-                    clientId = int.Parse(HttpContext.Request.Cookies["auth"]);
-                    HttpContext.Session.SetString("auth", clientId.ToString());
-                }
-
-                //TODO:добавление нового блюда
-                //clientDao.AddOneDishById(clientId);
-               
+                clientId = GetCLientId();
                 dishId = addDish.Id;
+                
                 //Добавляю в связывающую таблицу
                 dishClientDao.Insert(dishId, clientId);
 
                 //Добавляют продукты
-                var allProducts = new string[]
-                {
-                    Ingridient_0, Ingridient_1, Ingridient_2, Ingridient_3, Ingridient_4, Ingridient_5, Ingridient_6,
-                    Ingridient_7, Ingridient_8, Ingridient_9
-                };
-                for (int i = 0; i < allProducts.Length; i++)
-                {
-                    if (allProducts[i] == null)
-                        break;
-                    var pr = new Product()
-                    {
-                        Name = allProducts[i]
-                    };
-                    int productId = 0;
-                    if (productDao.AllEntities.Where(x => x.Name == pr.Name).Select(x => x.Id).Count() != 0)
-                    {
-                        productId =
-                            productDao.AllEntities.Where(x => x.Name == pr.Name).Select(x => x.Id).ToArray()[0];
-                    }
-                    else
-                    {
-                        productDao.Insert(pr);
-                        productId = pr.Id;
-                    }
-                    dishProductDao.Insert(dishId, productId);
-                }
-
-                if (IsItal)
-                {
-                    dishKitchenDao.Insert(dishId, -3);
-                }
-                if (IsRus)
-                {
-                    dishKitchenDao.Insert(dishId, -2);
-                }
-                if (IsTat)
-                {
-                    dishKitchenDao.Insert(dishId, -1);
-                }
-
+                AddProducts();
+                AddKithen();
                 //Добавляю шаги
-                var allSteps = new (string, IFormFile)[]
-                {
-                    (Description_0, Img_0),
-                    (Description_1, Img_1),
-                    (Description_2, Img_2),
-                    (Description_3, Img_3),
-                    (Description_4, Img_4)
-                };
-                for (int i = 0; i < allSteps.Length; i++)
-                {
-                    if (allSteps[i].Item1 == null)
-                        break;
-                    string path = "";
-                    //Сохраняем
-                    if (allSteps[i].Item2 != null)
-                    {
-                        path = FileHandler.SaveFileAndGetPath(allSteps[i].Item2, "/img/steps/");
-                    }
-
-                    var step = new Step()
-                    {
-                        Description = allSteps[i].Item1,
-                        DishID = dishId,
-                        NumberOfStep = i,
-                        Img = path
-                    };
-                    stepDao.Insert(step);
-                }
+                AddSteps();
             }
         }
+        
+        public void AddSteps()
+        {
+            //Добавляю шаги
+            var allSteps = new (string, IFormFile)[]
+            {
+                (Description_0, Img_0),
+                (Description_1, Img_1),
+                (Description_2, Img_2),
+                (Description_3, Img_3),
+                (Description_4, Img_4)
+            };
+            for (int i = 0; i < allSteps.Length; i++)
+            {
+                if (allSteps[i].Item1 == null)
+                    break;
+                string path = "";
+                //Сохраняем
+                if (allSteps[i].Item2 != null)
+                {
+                    path = FileHandler.SaveFileAndGetPath(allSteps[i].Item2, "/img/steps/");
+                }
+
+                var step = new Step()
+                {
+                    Description = allSteps[i].Item1,
+                    DishID = dishId,
+                    NumberOfStep = i,
+                    Img = path
+                };
+                stepDao.Insert(step);
+            }
+        }
+
+        public void AddProducts()
+        {
+            var allProducts = new string[]
+            {
+                Ingridient_0, Ingridient_1, Ingridient_2, Ingridient_3, Ingridient_4, Ingridient_5, Ingridient_6,
+                Ingridient_7, Ingridient_8, Ingridient_9
+            };
+            for (int i = 0; i < allProducts.Length; i++)
+            {
+                if (allProducts[i] == null)
+                    break;
+                var pr = new Product()
+                {
+                    Name = allProducts[i]
+                };
+                int productId = 0;
+                if (productDao.AllEntities.Where(x => x.Name == pr.Name).Select(x => x.Id).Count() != 0)
+                {
+                    productId =
+                        productDao.AllEntities.Where(x => x.Name == pr.Name).Select(x => x.Id).ToArray()[0];
+                }
+                else
+                {
+                    productDao.Insert(pr);
+                    productId = pr.Id;
+                }
+                dishProductDao.Insert(dishId, productId);
+            }
+        }
+        
+        public int GetCLientId()
+        {
+            var result = 0;
+            if (HttpContext.Session.Keys.Contains("auth"))
+            {
+                result = int.Parse(HttpContext.Session.GetString("auth"));
+            }
+            else
+            {
+                result = int.Parse(HttpContext.Request.Cookies["auth"]);
+                HttpContext.Session.SetString("auth", result.ToString());
+            }
+
+            return result;
+        }
+
+        public void AddKithen()
+        {
+            if (IsItal)
+            {
+                dishKitchenDao.Insert(dishId, -3);
+            }
+            if (IsRus)
+            {
+                dishKitchenDao.Insert(dishId, -2);
+            }
+            if (IsTat)
+            {
+                dishKitchenDao.Insert(dishId, -1);
+            }
+        }
+       
         [BindProperty]
         public string Ingridient_0 { get; set; }
         [BindProperty]

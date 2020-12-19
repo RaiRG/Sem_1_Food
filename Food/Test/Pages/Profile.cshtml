@@ -7,62 +7,64 @@
     <div class="row">
 
         <div class="col-md-1"></div>
+        @if (@Model.isCanShowContent)
+        {
+            <div class="col-md-3">
 
-        <div class="col-md-3">
+                <img src="@Model.Client.Img" class="profimg rounded rounded-circle border border-danger img-fluid img-thumbnail shadow">
 
-            <img src="@Model.Client.Img" class="profimg rounded rounded-circle border border-danger img-fluid img-thumbnail shadow">
-
-            <div class="row">
-                <div class="dropdown col-md-12" style="margin-top: 20px;">
-                    <button class="btn btn-secondary dropdown-toggle" style="background-color: #cedd81" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Настройки профиля
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #cedd81">
-                        <a class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#">Изменить фото</a>
-                        <a class="dropdown-item" data-toggle="modal" data-target="#editing" href="#">Редактировать профиль</a>
+                <div class="row">
+                    <div class="dropdown col-md-12" style="margin-top: 20px;">
+                        <button class="btn btn-secondary dropdown-toggle" style="background-color: #cedd81" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Настройки профиля
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #cedd81">
+                            <a class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#">Изменить фото</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#editing" href="#">Редактировать профиль</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
-        <div class="col-md-6" style="margin-left: 50px; margin-top: 25px;">
-            <div class="row">
-                <div class="col-md-4 profilinfo">
-                    <button style="background-color: #cedd81" class="btn btn-outline my-2 my-sm-0" type="submit">
-                        <a asp-page ="Logout" style="color: black">Выйти</a>
-                    </button>
+            <div class="col-md-6" style="margin-left: 50px; margin-top: 25px;">
+                <div class="row">
+                    <div class="col-md-4 profilinfo">
+                        <button style="background-color: #cedd81" class="btn btn-outline my-2 my-sm-0" type="submit">
+                            <a asp-page="Logout" style="color: black">Выйти</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 profilinfo">
+                        <h5 class="text-left">Фамилия :</h5>
+                        <p class="text-center">@Model.Client.Surname</p>
+                    </div>
+                    <div class="col-md-4 offset-md-2 profilinfo">
+                        <h5 class="text-left">Псевдоним :</h5>
+                        <p class="text-center">@Model.Client.Login</p>
+                    </div>
+
+                    <div class="col-md-4 profilinfo">
+                        <h5 class="text-left">Имя :</h5>
+                        <p class="text-center">@Model.Client.Name</p>
+                    </div>
+                    <div class="col-md-4 offset-md-2 profilinfo">
+                        <h5 class="text-left">Почта :</h5>
+                        <p class="text-center">@Model.PersonalInfo.Mail</p>
+                    </div>
+
+                    <div class="col-md-4 profilinfo">
+                        <h5 class="text-left">Кол-во блюд :</h5>
+                        <p class="text-center">@Model.NumberOfDishes</p>
+                    </div>
+                    <div class="col-md-4 offset-md-2 profilinfo">
+                        <h5 class="text-left">Рейтинг :</h5>
+                        <p class="text-center">@Model.Rating</p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 profilinfo">
-                    <h5 class="text-left">Фамилия :</h5>
-                    <p class="text-center">@Model.Client.Surname</p>
-                </div>
-                <div class="col-md-4 offset-md-2 profilinfo">
-                    <h5 class="text-left">Псевдоним :</h5>
-                    <p class="text-center">@Model.Client.Login</p>
-                </div>
-
-                <div class="col-md-4 profilinfo">
-                    <h5 class="text-left">Имя :</h5>
-                    <p class="text-center">@Model.Client.Name</p>
-                </div>
-                <div class="col-md-4 offset-md-2 profilinfo">
-                    <h5 class="text-left">Почта :</h5>
-                    <p class="text-center">@Model.PersonalInfo.Mail</p>
-                </div>
-
-                <div class="col-md-4 profilinfo">
-                    <h5 class="text-left">Кол-во блюд :</h5>
-                    <p class="text-center">@Model.NumberOfDishes</p>
-                </div>
-                <div class="col-md-4 offset-md-2 profilinfo">
-                    <h5 class="text-left">Рейтинг :</h5>
-                    <p class="text-center">@Model.Rating</p>
-                </div>
-            </div>
-        </div>
+        }
 
     </div>
 </div>
