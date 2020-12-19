@@ -28,14 +28,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6abba4e-64df-47bd-a9b7-21622fa0645d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Food/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Food/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Food/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Food/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Pages/Add.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Pages/Add.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Pages/Profile.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Pages/Profile.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Pages/Profile.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/wwwroot/img/profilePhotos/20201216131222463Без названия.jfif" beforeDir="false" />
-    </list>
+    <list default="true" id="c6abba4e-64df-47bd-a9b7-21622fa0645d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -278,6 +271,7 @@
       <workItem from="1608061060468" duration="12124000" />
       <workItem from="1608112314161" duration="6240000" />
       <workItem from="1608120417520" duration="2758000" />
+      <workItem from="1608397493921" duration="607000" />
     </task>
     <servers />
   </component>
